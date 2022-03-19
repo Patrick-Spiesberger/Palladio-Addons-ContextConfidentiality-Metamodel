@@ -29,13 +29,15 @@ import org.palladiosimulator.pcm.repository.OperationSignature;
  *
  * @generated
  */
-public class DatamodelAttackerImpl extends EntityImpl implements DatamodelAttacker {
+public class DatamodelAttackerImpl extends EntityImpl implements DatamodelAttacker
+{
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected DatamodelAttackerImpl() {
+	protected DatamodelAttackerImpl()
+	{
 		super();
 	}
 
@@ -45,7 +47,8 @@ public class DatamodelAttackerImpl extends EntityImpl implements DatamodelAttack
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass() {
+	protected EClass eStaticClass()
+	{
 		return AttackerPackage.Literals.DATAMODEL_ATTACKER;
 	}
 
@@ -54,8 +57,9 @@ public class DatamodelAttackerImpl extends EntityImpl implements DatamodelAttack
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DataType getDataType() {
-		return (DataType) eGet(AttackerPackage.Literals.DATAMODEL_ATTACKER__DATA_TYPE, true);
+	public DataType getDataType()
+	{
+		return (DataType)eGet(AttackerPackage.Literals.DATAMODEL_ATTACKER__DATA_TYPE, true);
 	}
 
 	/**
@@ -63,7 +67,8 @@ public class DatamodelAttackerImpl extends EntityImpl implements DatamodelAttack
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDataType(DataType newDataType) {
+	public void setDataType(DataType newDataType)
+	{
 		eSet(AttackerPackage.Literals.DATAMODEL_ATTACKER__DATA_TYPE, newDataType);
 	}
 
@@ -72,8 +77,9 @@ public class DatamodelAttackerImpl extends EntityImpl implements DatamodelAttack
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getReferenceName() {
-		return (String) eGet(AttackerPackage.Literals.DATAMODEL_ATTACKER__REFERENCE_NAME, true);
+	public String getReferenceName()
+	{
+		return (String)eGet(AttackerPackage.Literals.DATAMODEL_ATTACKER__REFERENCE_NAME, true);
 	}
 
 	/**
@@ -81,7 +87,8 @@ public class DatamodelAttackerImpl extends EntityImpl implements DatamodelAttack
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setReferenceName(String newReferenceName) {
+	public void setReferenceName(String newReferenceName)
+	{
 		eSet(AttackerPackage.Literals.DATAMODEL_ATTACKER__REFERENCE_NAME, newReferenceName);
 	}
 
@@ -90,8 +97,9 @@ public class DatamodelAttackerImpl extends EntityImpl implements DatamodelAttack
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObject getSource() {
-		return (EObject) eGet(AttackerPackage.Literals.DATAMODEL_ATTACKER__SOURCE, true);
+	public EObject getSource()
+	{
+		return (EObject)eGet(AttackerPackage.Literals.DATAMODEL_ATTACKER__SOURCE, true);
 	}
 
 	/**
@@ -99,7 +107,8 @@ public class DatamodelAttackerImpl extends EntityImpl implements DatamodelAttack
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setSource(EObject newSource) {
+	public void setSource(EObject newSource)
+	{
 		eSet(AttackerPackage.Literals.DATAMODEL_ATTACKER__SOURCE, newSource);
 	}
 
@@ -108,8 +117,9 @@ public class DatamodelAttackerImpl extends EntityImpl implements DatamodelAttack
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public OperationSignature getMethod() {
-		return (OperationSignature) eGet(AttackerPackage.Literals.DATAMODEL_ATTACKER__METHOD, true);
+	public OperationSignature getMethod()
+	{
+		return (OperationSignature)eGet(AttackerPackage.Literals.DATAMODEL_ATTACKER__METHOD, true);
 	}
 
 	/**
@@ -117,7 +127,8 @@ public class DatamodelAttackerImpl extends EntityImpl implements DatamodelAttack
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setMethod(OperationSignature newMethod) {
+	public void setMethod(OperationSignature newMethod)
+	{
 		eSet(AttackerPackage.Literals.DATAMODEL_ATTACKER__METHOD, newMethod);
 	}
 

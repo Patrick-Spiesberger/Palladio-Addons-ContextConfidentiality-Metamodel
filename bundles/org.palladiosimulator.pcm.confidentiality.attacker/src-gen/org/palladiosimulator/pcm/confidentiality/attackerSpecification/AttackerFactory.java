@@ -12,15 +12,15 @@ import org.eclipse.emf.ecore.EFactory;
  * @see org.palladiosimulator.pcm.confidentiality.attackerSpecification.AttackerPackage
  * @generated
  */
-public interface AttackerFactory extends EFactory {
+public interface AttackerFactory extends EFactory
+{
 	/**
 	 * The singleton instance of the factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	AttackerFactory eINSTANCE = org.palladiosimulator.pcm.confidentiality.attackerSpecification.impl.AttackerFactoryImpl
-			.init();
+	AttackerFactory eINSTANCE = org.palladiosimulator.pcm.confidentiality.attackerSpecification.impl.AttackerFactoryImpl.init();
 
 	/**
 	 * Returns a new object of class '<em>Container</em>'.
@@ -30,6 +30,15 @@ public interface AttackerFactory extends EFactory {
 	 * @generated
 	 */
 	AttackerContainer createAttackerContainer();
+
+	/**
+	 * Returns a new object of class '<em>Attacker</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Attacker</em>'.
+	 * @generated
+	 */
+	Attacker createAttacker();
 
 	/**
 	 * Returns a new object of class '<em>Specification</em>'.
@@ -93,6 +102,33 @@ public interface AttackerFactory extends EFactory {
 	 * @generated
 	 */
 	AssemblyContextDetail createAssemblyContextDetail();
+
+	/**
+	 * Returns a new object of class '<em>Mitigation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Mitigation</em>'.
+	 * @generated
+	 */
+	Mitigation createMitigation();
+
+	/**
+	 * Returns a new object of class '<em>Encryption</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Encryption</em>'.
+	 * @generated
+	 */
+	Encryption createEncryption();
+
+	/**
+	 * Returns a new object of class '<em>Datamodel Container</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Datamodel Container</em>'.
+	 * @generated
+	 */
+	DatamodelContainer createDatamodelContainer();
 
 	/**
 	 * Returns the package supported by this factory.

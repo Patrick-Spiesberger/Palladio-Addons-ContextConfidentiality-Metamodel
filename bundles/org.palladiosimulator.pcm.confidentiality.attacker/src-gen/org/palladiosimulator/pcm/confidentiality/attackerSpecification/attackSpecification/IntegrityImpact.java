@@ -17,7 +17,8 @@ import org.eclipse.emf.common.util.Enumerator;
  * @model
  * @generated
  */
-public enum IntegrityImpact implements Enumerator {
+public enum IntegrityImpact implements Enumerator
+{
 	/**
 	 * The '<em><b>High</b></em>' literal object.
 	 * <!-- begin-user-doc -->
@@ -87,7 +88,13 @@ public enum IntegrityImpact implements Enumerator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private static final IntegrityImpact[] VALUES_ARRAY = new IntegrityImpact[] { HIGH, LOW, NONE, };
+	private static final IntegrityImpact[] VALUES_ARRAY =
+		new IntegrityImpact[]
+		{
+			HIGH,
+			LOW,
+			NONE,
+		};
 
 	/**
 	 * A public read-only list of all the '<em><b>Integrity Impact</b></em>' enumerators.
@@ -105,10 +112,13 @@ public enum IntegrityImpact implements Enumerator {
 	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
-	public static IntegrityImpact get(String literal) {
-		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
+	public static IntegrityImpact get(String literal)
+	{
+		for (int i = 0; i < VALUES_ARRAY.length; ++i)
+		{
 			IntegrityImpact result = VALUES_ARRAY[i];
-			if (result.toString().equals(literal)) {
+			if (result.toString().equals(literal))
+			{
 				return result;
 			}
 		}
@@ -123,10 +133,13 @@ public enum IntegrityImpact implements Enumerator {
 	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
-	public static IntegrityImpact getByName(String name) {
-		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
+	public static IntegrityImpact getByName(String name)
+	{
+		for (int i = 0; i < VALUES_ARRAY.length; ++i)
+		{
 			IntegrityImpact result = VALUES_ARRAY[i];
-			if (result.getName().equals(name)) {
+			if (result.getName().equals(name))
+			{
 				return result;
 			}
 		}
@@ -141,14 +154,13 @@ public enum IntegrityImpact implements Enumerator {
 	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
-	public static IntegrityImpact get(int value) {
-		switch (value) {
-		case HIGH_VALUE:
-			return HIGH;
-		case LOW_VALUE:
-			return LOW;
-		case NONE_VALUE:
-			return NONE;
+	public static IntegrityImpact get(int value)
+	{
+		switch (value)
+		{
+			case HIGH_VALUE: return HIGH;
+			case LOW_VALUE: return LOW;
+			case NONE_VALUE: return NONE;
 		}
 		return null;
 	}
@@ -180,7 +192,8 @@ public enum IntegrityImpact implements Enumerator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private IntegrityImpact(int value, String name, String literal) {
+	private IntegrityImpact(int value, String name, String literal)
+	{
 		this.value = value;
 		this.name = name;
 		this.literal = literal;
@@ -191,8 +204,9 @@ public enum IntegrityImpact implements Enumerator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public int getValue() {
-		return value;
+	public int getValue()
+	{
+	  return value;
 	}
 
 	/**
@@ -200,8 +214,9 @@ public enum IntegrityImpact implements Enumerator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getName() {
-		return name;
+	public String getName()
+	{
+	  return name;
 	}
 
 	/**
@@ -209,8 +224,9 @@ public enum IntegrityImpact implements Enumerator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getLiteral() {
-		return literal;
+	public String getLiteral()
+	{
+	  return literal;
 	}
 
 	/**
@@ -220,8 +236,9 @@ public enum IntegrityImpact implements Enumerator {
 	 * @generated
 	 */
 	@Override
-	public String toString() {
+	public String toString()
+	{
 		return literal;
 	}
-
+	
 } //IntegrityImpact

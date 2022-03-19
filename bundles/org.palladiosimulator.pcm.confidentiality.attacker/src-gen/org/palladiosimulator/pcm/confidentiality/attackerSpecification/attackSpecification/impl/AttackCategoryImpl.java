@@ -16,13 +16,15 @@ import org.palladiosimulator.pcm.core.entity.impl.NamedElementImpl;
  *
  * @generated
  */
-public abstract class AttackCategoryImpl extends NamedElementImpl implements AttackCategory {
+public abstract class AttackCategoryImpl extends NamedElementImpl implements AttackCategory
+{
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected AttackCategoryImpl() {
+	protected AttackCategoryImpl()
+	{
 		super();
 	}
 
@@ -32,7 +34,8 @@ public abstract class AttackCategoryImpl extends NamedElementImpl implements Att
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass() {
+	protected EClass eStaticClass()
+	{
 		return AttackSpecificationPackage.Literals.ATTACK_CATEGORY;
 	}
 
@@ -41,7 +44,8 @@ public abstract class AttackCategoryImpl extends NamedElementImpl implements Att
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean equalAttackType(AttackCategory category) {
+	public boolean equalAttackType(AttackCategory category)
+	{
 		// TODO: implement this method
 		// Ensure that you remove @generated or mark it @generated NOT
 		throw new UnsupportedOperationException();

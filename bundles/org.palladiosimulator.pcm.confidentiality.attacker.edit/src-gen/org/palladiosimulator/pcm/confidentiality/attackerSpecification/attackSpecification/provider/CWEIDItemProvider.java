@@ -2,6 +2,7 @@
  */
 package org.palladiosimulator.pcm.confidentiality.attackerSpecification.attackSpecification.provider;
 
+
 import java.util.Collection;
 import java.util.List;
 
@@ -22,14 +23,16 @@ import org.palladiosimulator.pcm.confidentiality.attackerSpecification.attackSpe
  * <!-- end-user-doc -->
  * @generated
  */
-public class CWEIDItemProvider extends AttackCategoryItemProvider {
+public class CWEIDItemProvider extends AttackCategoryItemProvider
+{
 	/**
 	 * This constructs an instance from a factory and a notifier.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CWEIDItemProvider(AdapterFactory adapterFactory) {
+	public CWEIDItemProvider(AdapterFactory adapterFactory)
+	{
 		super(adapterFactory);
 	}
 
@@ -40,8 +43,10 @@ public class CWEIDItemProvider extends AttackCategoryItemProvider {
 	 * @generated
 	 */
 	@Override
-	public List<IItemPropertyDescriptor> getPropertyDescriptors(Object object) {
-		if (itemPropertyDescriptors == null) {
+	public List<IItemPropertyDescriptor> getPropertyDescriptors(Object object)
+	{
+		if (itemPropertyDescriptors == null)
+		{
 			super.getPropertyDescriptors(object);
 
 			addCweIDPropertyDescriptor(object);
@@ -57,13 +62,21 @@ public class CWEIDItemProvider extends AttackCategoryItemProvider {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void addCweIDPropertyDescriptor(Object object) {
-		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_CWEID_cweID_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_CWEID_cweID_feature", "_UI_CWEID_type"),
-						AttackSpecificationPackage.Literals.CWEID__CWE_ID, true, false, false,
-						ItemPropertyDescriptor.INTEGRAL_VALUE_IMAGE, null, null));
+	protected void addCweIDPropertyDescriptor(Object object)
+	{
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_CWEID_cweID_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_CWEID_cweID_feature", "_UI_CWEID_type"),
+				 AttackSpecificationPackage.Literals.CWEID__CWE_ID,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.INTEGRAL_VALUE_IMAGE,
+				 null,
+				 null));
 	}
 
 	/**
@@ -72,12 +85,21 @@ public class CWEIDItemProvider extends AttackCategoryItemProvider {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void addChildrenPropertyDescriptor(Object object) {
-		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_CWEID_children_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_CWEID_children_feature", "_UI_CWEID_type"),
-						AttackSpecificationPackage.Literals.CWEID__CHILDREN, true, false, true, null, null, null));
+	protected void addChildrenPropertyDescriptor(Object object)
+	{
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_CWEID_children_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_CWEID_children_feature", "_UI_CWEID_type"),
+				 AttackSpecificationPackage.Literals.CWEID__CHILDREN,
+				 true,
+				 false,
+				 true,
+				 null,
+				 null,
+				 null));
 	}
 
 	/**
@@ -86,12 +108,21 @@ public class CWEIDItemProvider extends AttackCategoryItemProvider {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void addParentsPropertyDescriptor(Object object) {
-		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_CWEID_parents_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_CWEID_parents_feature", "_UI_CWEID_type"),
-						AttackSpecificationPackage.Literals.CWEID__PARENTS, true, false, true, null, null, null));
+	protected void addParentsPropertyDescriptor(Object object)
+	{
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_CWEID_parents_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_CWEID_parents_feature", "_UI_CWEID_type"),
+				 AttackSpecificationPackage.Literals.CWEID__PARENTS,
+				 true,
+				 false,
+				 true,
+				 null,
+				 null,
+				 null));
 	}
 
 	/**
@@ -101,7 +132,8 @@ public class CWEIDItemProvider extends AttackCategoryItemProvider {
 	 * @generated
 	 */
 	@Override
-	public Object getImage(Object object) {
+	public Object getImage(Object object)
+	{
 		return overlayImage(object, getResourceLocator().getImage("full/obj16/CWEID"));
 	}
 
@@ -111,7 +143,8 @@ public class CWEIDItemProvider extends AttackCategoryItemProvider {
 	 * @generated
 	 */
 	@Override
-	protected boolean shouldComposeCreationImage() {
+	protected boolean shouldComposeCreationImage()
+	{
 		return true;
 	}
 
@@ -122,11 +155,14 @@ public class CWEIDItemProvider extends AttackCategoryItemProvider {
 	 * @generated
 	 */
 	@Override
-	public String getText(Object object) {
-		String label = ((CWEID) object).getEntityName();
-		return label == null || label.length() == 0 ? getString("_UI_CWEID_type")
-				: getString("_UI_CWEID_type") + " " + label;
+	public String getText(Object object)
+	{
+		String label = ((CWEID)object).getEntityName();
+		return label == null || label.length() == 0 ?
+			getString("_UI_CWEID_type") :
+			getString("_UI_CWEID_type") + " " + label;
 	}
+
 
 	/**
 	 * This handles model notifications by calling {@link #updateChildren} to update any cached
@@ -136,13 +172,15 @@ public class CWEIDItemProvider extends AttackCategoryItemProvider {
 	 * @generated
 	 */
 	@Override
-	public void notifyChanged(Notification notification) {
+	public void notifyChanged(Notification notification)
+	{
 		updateChildren(notification);
 
-		switch (notification.getFeatureID(CWEID.class)) {
-		case AttackSpecificationPackage.CWEID__CWE_ID:
-			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
-			return;
+		switch (notification.getFeatureID(CWEID.class))
+		{
+			case AttackSpecificationPackage.CWEID__CWE_ID:
+				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
+				return;
 		}
 		super.notifyChanged(notification);
 	}
@@ -155,7 +193,8 @@ public class CWEIDItemProvider extends AttackCategoryItemProvider {
 	 * @generated
 	 */
 	@Override
-	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
+	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object)
+	{
 		super.collectNewChildDescriptors(newChildDescriptors, object);
 	}
 

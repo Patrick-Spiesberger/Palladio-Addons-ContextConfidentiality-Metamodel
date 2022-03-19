@@ -28,7 +28,8 @@ import org.palladiosimulator.pcm.repository.OperationSignature;
  * @model
  * @generated
  */
-public interface DatamodelAttacker extends Entity {
+public interface DatamodelAttacker extends Entity
+{
 	/**
 	 * Returns the value of the '<em><b>Data Type</b></em>' reference.
 	 * <!-- begin-user-doc -->

@@ -150,21 +150,6 @@ public class ServiceRestrictionItemProvider extends ServiceRestrictionItemProvid
     }
 
     /**
-     * Filter based on target.
-     *
-     * @param restriction the restriction
-     * @param targetList the target list
-     * @return the list
-     */
-    private List<AssemblyContext> filterBasedOnTarget(ServiceRestriction restriction,
-            List<AssemblyContext> targetList) {
-
-        //        if(restriction.eContainer() instanceof
-
-        return targetList;
-    }
-
-    /**
      * Adds the service property descriptor.
      *
      * @param object the object

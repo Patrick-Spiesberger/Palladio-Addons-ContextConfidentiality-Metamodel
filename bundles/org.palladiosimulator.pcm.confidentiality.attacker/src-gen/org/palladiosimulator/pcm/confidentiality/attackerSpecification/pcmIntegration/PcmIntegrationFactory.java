@@ -12,15 +12,15 @@ import org.eclipse.emf.ecore.EFactory;
  * @see org.palladiosimulator.pcm.confidentiality.attackerSpecification.pcmIntegration.PcmIntegrationPackage
  * @generated
  */
-public interface PcmIntegrationFactory extends EFactory {
+public interface PcmIntegrationFactory extends EFactory
+{
 	/**
 	 * The singleton instance of the factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	PcmIntegrationFactory eINSTANCE = org.palladiosimulator.pcm.confidentiality.attackerSpecification.pcmIntegration.impl.PcmIntegrationFactoryImpl
-			.init();
+	PcmIntegrationFactory eINSTANCE = org.palladiosimulator.pcm.confidentiality.attackerSpecification.pcmIntegration.impl.PcmIntegrationFactoryImpl.init();
 
 	/**
 	 * Returns a new object of class '<em>Vulnerability System Integration</em>'.
@@ -57,6 +57,24 @@ public interface PcmIntegrationFactory extends EFactory {
 	 * @generated
 	 */
 	NonGlobalCommunication createNonGlobalCommunication();
+
+	/**
+	 * Returns a new object of class '<em>Prevention</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Prevention</em>'.
+	 * @generated
+	 */
+	Prevention createPrevention();
+
+	/**
+	 * Returns a new object of class '<em>Attack Vector Integration</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Attack Vector Integration</em>'.
+	 * @generated
+	 */
+	AttackVectorIntegration createAttackVectorIntegration();
 
 	/**
 	 * Returns the package supported by this factory.

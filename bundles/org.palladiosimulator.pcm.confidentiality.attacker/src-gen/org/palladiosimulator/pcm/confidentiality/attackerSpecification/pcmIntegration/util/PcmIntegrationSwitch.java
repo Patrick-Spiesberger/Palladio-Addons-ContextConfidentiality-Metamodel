@@ -12,6 +12,8 @@ import org.eclipse.emf.ecore.util.Switch;
 import org.palladiosimulator.pcm.PCMBaseClass;
 import org.palladiosimulator.pcm.PCMClass;
 
+import org.palladiosimulator.pcm.confidentiality.attackerSpecification.MitigationSpecification;
+
 import org.palladiosimulator.pcm.confidentiality.attackerSpecification.pcmIntegration.*;
 
 import org.palladiosimulator.pcm.core.entity.Entity;
@@ -30,7 +32,8 @@ import org.palladiosimulator.pcm.core.entity.NamedElement;
  * @see org.palladiosimulator.pcm.confidentiality.attackerSpecification.pcmIntegration.PcmIntegrationPackage
  * @generated
  */
-public class PcmIntegrationSwitch<T> extends Switch<T> {
+public class PcmIntegrationSwitch<T> extends Switch<T>
+{
 	/**
 	 * The cached model package
 	 * <!-- begin-user-doc -->
@@ -45,8 +48,10 @@ public class PcmIntegrationSwitch<T> extends Switch<T> {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PcmIntegrationSwitch() {
-		if (modelPackage == null) {
+	public PcmIntegrationSwitch()
+	{
+		if (modelPackage == null)
+		{
 			modelPackage = PcmIntegrationPackage.eINSTANCE;
 		}
 	}
@@ -60,7 +65,8 @@ public class PcmIntegrationSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	@Override
-	protected boolean isSwitchFor(EPackage ePackage) {
+	protected boolean isSwitchFor(EPackage ePackage)
+	{
 		return ePackage == modelPackage;
 	}
 
@@ -72,101 +78,100 @@ public class PcmIntegrationSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	@Override
-	protected T doSwitch(int classifierID, EObject theEObject) {
-		switch (classifierID) {
-		case PcmIntegrationPackage.VULNERABILITY_SYSTEM_INTEGRATION: {
-			VulnerabilitySystemIntegration vulnerabilitySystemIntegration = (VulnerabilitySystemIntegration) theEObject;
-			T result = caseVulnerabilitySystemIntegration(vulnerabilitySystemIntegration);
-			if (result == null)
-				result = caseSystemIntegration(vulnerabilitySystemIntegration);
-			if (result == null)
-				result = caseEntity(vulnerabilitySystemIntegration);
-			if (result == null)
-				result = caseIdentifier(vulnerabilitySystemIntegration);
-			if (result == null)
-				result = caseNamedElement(vulnerabilitySystemIntegration);
-			if (result == null)
-				result = casePCMBaseClass(vulnerabilitySystemIntegration);
-			if (result == null)
-				result = casePCMClass(vulnerabilitySystemIntegration);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
-		case PcmIntegrationPackage.PCM_ELEMENT: {
-			PCMElement pcmElement = (PCMElement) theEObject;
-			T result = casePCMElement(pcmElement);
-			if (result == null)
-				result = caseEntity(pcmElement);
-			if (result == null)
-				result = caseIdentifier(pcmElement);
-			if (result == null)
-				result = caseNamedElement(pcmElement);
-			if (result == null)
-				result = casePCMBaseClass(pcmElement);
-			if (result == null)
-				result = casePCMClass(pcmElement);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
-		case PcmIntegrationPackage.ROLE_SYSTEM_INTEGRATION: {
-			RoleSystemIntegration roleSystemIntegration = (RoleSystemIntegration) theEObject;
-			T result = caseRoleSystemIntegration(roleSystemIntegration);
-			if (result == null)
-				result = caseSystemIntegration(roleSystemIntegration);
-			if (result == null)
-				result = caseEntity(roleSystemIntegration);
-			if (result == null)
-				result = caseIdentifier(roleSystemIntegration);
-			if (result == null)
-				result = caseNamedElement(roleSystemIntegration);
-			if (result == null)
-				result = casePCMBaseClass(roleSystemIntegration);
-			if (result == null)
-				result = casePCMClass(roleSystemIntegration);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
-		case PcmIntegrationPackage.SYSTEM_INTEGRATION: {
-			SystemIntegration systemIntegration = (SystemIntegration) theEObject;
-			T result = caseSystemIntegration(systemIntegration);
-			if (result == null)
-				result = caseEntity(systemIntegration);
-			if (result == null)
-				result = caseIdentifier(systemIntegration);
-			if (result == null)
-				result = caseNamedElement(systemIntegration);
-			if (result == null)
-				result = casePCMBaseClass(systemIntegration);
-			if (result == null)
-				result = casePCMClass(systemIntegration);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
-		case PcmIntegrationPackage.NON_GLOBAL_COMMUNICATION: {
-			NonGlobalCommunication nonGlobalCommunication = (NonGlobalCommunication) theEObject;
-			T result = caseNonGlobalCommunication(nonGlobalCommunication);
-			if (result == null)
-				result = caseSystemIntegration(nonGlobalCommunication);
-			if (result == null)
-				result = caseEntity(nonGlobalCommunication);
-			if (result == null)
-				result = caseIdentifier(nonGlobalCommunication);
-			if (result == null)
-				result = caseNamedElement(nonGlobalCommunication);
-			if (result == null)
-				result = casePCMBaseClass(nonGlobalCommunication);
-			if (result == null)
-				result = casePCMClass(nonGlobalCommunication);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
-		default:
-			return defaultCase(theEObject);
+	protected T doSwitch(int classifierID, EObject theEObject)
+	{
+		switch (classifierID)
+		{
+			case PcmIntegrationPackage.VULNERABILITY_SYSTEM_INTEGRATION:
+			{
+				VulnerabilitySystemIntegration vulnerabilitySystemIntegration = (VulnerabilitySystemIntegration)theEObject;
+				T result = caseVulnerabilitySystemIntegration(vulnerabilitySystemIntegration);
+				if (result == null) result = caseSystemIntegration(vulnerabilitySystemIntegration);
+				if (result == null) result = caseEntity(vulnerabilitySystemIntegration);
+				if (result == null) result = caseIdentifier(vulnerabilitySystemIntegration);
+				if (result == null) result = caseNamedElement(vulnerabilitySystemIntegration);
+				if (result == null) result = casePCMBaseClass(vulnerabilitySystemIntegration);
+				if (result == null) result = casePCMClass(vulnerabilitySystemIntegration);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case PcmIntegrationPackage.PCM_ELEMENT:
+			{
+				PCMElement pcmElement = (PCMElement)theEObject;
+				T result = casePCMElement(pcmElement);
+				if (result == null) result = caseEntity(pcmElement);
+				if (result == null) result = caseIdentifier(pcmElement);
+				if (result == null) result = caseNamedElement(pcmElement);
+				if (result == null) result = casePCMBaseClass(pcmElement);
+				if (result == null) result = casePCMClass(pcmElement);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case PcmIntegrationPackage.ROLE_SYSTEM_INTEGRATION:
+			{
+				RoleSystemIntegration roleSystemIntegration = (RoleSystemIntegration)theEObject;
+				T result = caseRoleSystemIntegration(roleSystemIntegration);
+				if (result == null) result = caseSystemIntegration(roleSystemIntegration);
+				if (result == null) result = caseEntity(roleSystemIntegration);
+				if (result == null) result = caseIdentifier(roleSystemIntegration);
+				if (result == null) result = caseNamedElement(roleSystemIntegration);
+				if (result == null) result = casePCMBaseClass(roleSystemIntegration);
+				if (result == null) result = casePCMClass(roleSystemIntegration);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case PcmIntegrationPackage.SYSTEM_INTEGRATION:
+			{
+				SystemIntegration systemIntegration = (SystemIntegration)theEObject;
+				T result = caseSystemIntegration(systemIntegration);
+				if (result == null) result = caseEntity(systemIntegration);
+				if (result == null) result = caseIdentifier(systemIntegration);
+				if (result == null) result = caseNamedElement(systemIntegration);
+				if (result == null) result = casePCMBaseClass(systemIntegration);
+				if (result == null) result = casePCMClass(systemIntegration);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case PcmIntegrationPackage.NON_GLOBAL_COMMUNICATION:
+			{
+				NonGlobalCommunication nonGlobalCommunication = (NonGlobalCommunication)theEObject;
+				T result = caseNonGlobalCommunication(nonGlobalCommunication);
+				if (result == null) result = caseSystemIntegration(nonGlobalCommunication);
+				if (result == null) result = caseEntity(nonGlobalCommunication);
+				if (result == null) result = caseIdentifier(nonGlobalCommunication);
+				if (result == null) result = caseNamedElement(nonGlobalCommunication);
+				if (result == null) result = casePCMBaseClass(nonGlobalCommunication);
+				if (result == null) result = casePCMClass(nonGlobalCommunication);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case PcmIntegrationPackage.PREVENTION:
+			{
+				Prevention prevention = (Prevention)theEObject;
+				T result = casePrevention(prevention);
+				if (result == null) result = caseMitigationSpecification(prevention);
+				if (result == null) result = caseEntity(prevention);
+				if (result == null) result = caseIdentifier(prevention);
+				if (result == null) result = caseNamedElement(prevention);
+				if (result == null) result = casePCMBaseClass(prevention);
+				if (result == null) result = casePCMClass(prevention);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case PcmIntegrationPackage.ATTACK_VECTOR_INTEGRATION:
+			{
+				AttackVectorIntegration attackVectorIntegration = (AttackVectorIntegration)theEObject;
+				T result = caseAttackVectorIntegration(attackVectorIntegration);
+				if (result == null) result = caseSystemIntegration(attackVectorIntegration);
+				if (result == null) result = caseEntity(attackVectorIntegration);
+				if (result == null) result = caseIdentifier(attackVectorIntegration);
+				if (result == null) result = caseNamedElement(attackVectorIntegration);
+				if (result == null) result = casePCMBaseClass(attackVectorIntegration);
+				if (result == null) result = casePCMClass(attackVectorIntegration);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			default: return defaultCase(theEObject);
 		}
 	}
 
@@ -181,7 +186,8 @@ public class PcmIntegrationSwitch<T> extends Switch<T> {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseVulnerabilitySystemIntegration(VulnerabilitySystemIntegration object) {
+	public T caseVulnerabilitySystemIntegration(VulnerabilitySystemIntegration object)
+	{
 		return null;
 	}
 
@@ -196,7 +202,8 @@ public class PcmIntegrationSwitch<T> extends Switch<T> {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T casePCMElement(PCMElement object) {
+	public T casePCMElement(PCMElement object)
+	{
 		return null;
 	}
 
@@ -211,7 +218,8 @@ public class PcmIntegrationSwitch<T> extends Switch<T> {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseRoleSystemIntegration(RoleSystemIntegration object) {
+	public T caseRoleSystemIntegration(RoleSystemIntegration object)
+	{
 		return null;
 	}
 
@@ -226,7 +234,8 @@ public class PcmIntegrationSwitch<T> extends Switch<T> {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseSystemIntegration(SystemIntegration object) {
+	public T caseSystemIntegration(SystemIntegration object)
+	{
 		return null;
 	}
 
@@ -241,7 +250,40 @@ public class PcmIntegrationSwitch<T> extends Switch<T> {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseNonGlobalCommunication(NonGlobalCommunication object) {
+	public T caseNonGlobalCommunication(NonGlobalCommunication object)
+	{
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Prevention</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Prevention</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T casePrevention(Prevention object)
+	{
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Attack Vector Integration</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Attack Vector Integration</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseAttackVectorIntegration(AttackVectorIntegration object)
+	{
 		return null;
 	}
 
@@ -256,7 +298,8 @@ public class PcmIntegrationSwitch<T> extends Switch<T> {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseIdentifier(Identifier object) {
+	public T caseIdentifier(Identifier object)
+	{
 		return null;
 	}
 
@@ -271,7 +314,8 @@ public class PcmIntegrationSwitch<T> extends Switch<T> {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T casePCMClass(PCMClass object) {
+	public T casePCMClass(PCMClass object)
+	{
 		return null;
 	}
 
@@ -286,7 +330,8 @@ public class PcmIntegrationSwitch<T> extends Switch<T> {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T casePCMBaseClass(PCMBaseClass object) {
+	public T casePCMBaseClass(PCMBaseClass object)
+	{
 		return null;
 	}
 
@@ -301,7 +346,8 @@ public class PcmIntegrationSwitch<T> extends Switch<T> {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseNamedElement(NamedElement object) {
+	public T caseNamedElement(NamedElement object)
+	{
 		return null;
 	}
 
@@ -316,7 +362,24 @@ public class PcmIntegrationSwitch<T> extends Switch<T> {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseEntity(Entity object) {
+	public T caseEntity(Entity object)
+	{
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Mitigation Specification</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Mitigation Specification</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseMitigationSpecification(MitigationSpecification object)
+	{
 		return null;
 	}
 
@@ -332,7 +395,8 @@ public class PcmIntegrationSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	@Override
-	public T defaultCase(EObject object) {
+	public T defaultCase(EObject object)
+	{
 		return null;
 	}
 

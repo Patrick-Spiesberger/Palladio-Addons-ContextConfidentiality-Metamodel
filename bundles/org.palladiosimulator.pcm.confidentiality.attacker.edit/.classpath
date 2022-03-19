@@ -1,7 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="src-gen"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-11"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="/home/patrick/Dokumente/AttackPropagantion/AttackerPropagation.linux.gtk.x86_64/plugins/org.palladiosimulator.pcm.edit_5.1.0.202201060148.jar" sourcepath="/home/patrick/Dokumente/AttackPropagantion/AttackerPropagation.linux.gtk.x86_64/plugins/org.palladiosimulator.pcm.edit_5.1.0.202201060148.jar">
+		<accessrules>
+			<accessrule kind="accessible" pattern="org/palladiosimulator/pcm/allocation/provider/*"/>
+			<accessrule kind="accessible" pattern="org/palladiosimulator/pcm/core/composition/provider/*"/>
+			<accessrule kind="accessible" pattern="org/palladiosimulator/pcm/core/entity/provider/*"/>
+			<accessrule kind="accessible" pattern="org/palladiosimulator/pcm/core/provider/*"/>
+			<accessrule kind="accessible" pattern="org/palladiosimulator/pcm/parameter/provider/*"/>
+			<accessrule kind="accessible" pattern="org/palladiosimulator/pcm/protocol/provider/*"/>
+			<accessrule kind="accessible" pattern="org/palladiosimulator/pcm/provider/*"/>
+			<accessrule kind="accessible" pattern="org/palladiosimulator/pcm/qosannotations/provider/*"/>
+			<accessrule kind="accessible" pattern="org/palladiosimulator/pcm/qosannotations/qos_performance/provider/*"/>
+			<accessrule kind="accessible" pattern="org/palladiosimulator/pcm/qosannotations/qos_reliability/provider/*"/>
+			<accessrule kind="accessible" pattern="org/palladiosimulator/pcm/reliability/provider/*"/>
+			<accessrule kind="accessible" pattern="org/palladiosimulator/pcm/repository/provider/*"/>
+			<accessrule kind="accessible" pattern="org/palladiosimulator/pcm/resourceenvironment/provider/*"/>
+			<accessrule kind="accessible" pattern="org/palladiosimulator/pcm/resourcetype/provider/*"/>
+			<accessrule kind="accessible" pattern="org/palladiosimulator/pcm/seff/provider/*"/>
+			<accessrule kind="accessible" pattern="org/palladiosimulator/pcm/seff/seff_performance/provider/*"/>
+			<accessrule kind="accessible" pattern="org/palladiosimulator/pcm/seff/seff_reliability/provider/*"/>
+			<accessrule kind="accessible" pattern="org/palladiosimulator/pcm/subsystem/provider/*"/>
+			<accessrule kind="accessible" pattern="org/palladiosimulator/pcm/system/provider/*"/>
+			<accessrule kind="accessible" pattern="org/palladiosimulator/pcm/usagemodel/provider/*"/>
+			<accessrule ignoreifbetter="true" kind="nonaccessible" pattern="**/*"/>
+		</accessrules>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/patrick/Dokumente/AttackPropagantion/AttackerPropagation.linux.gtk.x86_64/plugins/org.eclipse.emf.codegen.ecore_2.28.0.v20210925-0555.jar" sourcepath="/home/patrick/Dokumente/AttackPropagantion/AttackerPropagation.linux.gtk.x86_64/plugins/org.eclipse.emf.codegen.ecore_2.28.0.v20210925-0555.jar">
+		<accessrules>
+			<accessrule kind="accessible" pattern="org/eclipse/emf/codegen/ecore/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/emf/codegen/ecore/generator/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/emf/codegen/ecore/genmodel/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/emf/codegen/ecore/genmodel/generator/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/emf/codegen/ecore/genmodel/impl/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/emf/codegen/ecore/genmodel/util/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/emf/codegen/ecore/gwt/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/emf/codegen/ecore/templates/edit/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/emf/codegen/ecore/templates/editor/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/emf/codegen/ecore/templates/model/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/emf/codegen/ecore/templates/model/tests/*"/>
+			<accessrule ignoreifbetter="true" kind="nonaccessible" pattern="**/*"/>
+		</accessrules>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/patrick/Dokumente/AttackPropagantion/AttackerPropagation.linux.gtk.x86_64/plugins/org.eclipse.emf.common_2.23.0.v20210924-1718.jar" sourcepath="/home/patrick/Dokumente/AttackPropagantion/AttackerPropagation.linux.gtk.x86_64/plugins/org.eclipse.emf.common_2.23.0.v20210924-1718.jar">
+		<accessrules>
+			<accessrule kind="accessible" pattern="org/eclipse/emf/common/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/emf/common/archive/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/emf/common/command/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/emf/common/notify/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/emf/common/notify/impl/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/emf/common/util/*"/>
+			<accessrule ignoreifbetter="true" kind="nonaccessible" pattern="**/*"/>
+		</accessrules>
+	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.pde.core.requiredPlugins"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

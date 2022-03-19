@@ -26,13 +26,15 @@ import org.palladiosimulator.pcm.confidentiality.attackerSpecification.attackSpe
  *
  * @generated
  */
-public class AttackContainerImpl extends CDOObjectImpl implements AttackContainer {
+public class AttackContainerImpl extends CDOObjectImpl implements AttackContainer
+{
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected AttackContainerImpl() {
+	protected AttackContainerImpl()
+	{
 		super();
 	}
 
@@ -42,7 +44,8 @@ public class AttackContainerImpl extends CDOObjectImpl implements AttackContaine
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass() {
+	protected EClass eStaticClass()
+	{
 		return AttackerPackage.Literals.ATTACK_CONTAINER;
 	}
 
@@ -52,7 +55,8 @@ public class AttackContainerImpl extends CDOObjectImpl implements AttackContaine
 	 * @generated
 	 */
 	@Override
-	protected int eStaticFeatureCount() {
+	protected int eStaticFeatureCount()
+	{
 		return 0;
 	}
 
@@ -62,8 +66,9 @@ public class AttackContainerImpl extends CDOObjectImpl implements AttackContaine
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
-	public EList<Attack> getAttack() {
-		return (EList<Attack>) eGet(AttackerPackage.Literals.ATTACK_CONTAINER__ATTACK, true);
+	public EList<Attack> getAttack()
+	{
+		return (EList<Attack>)eGet(AttackerPackage.Literals.ATTACK_CONTAINER__ATTACK, true);
 	}
 
 } //AttackContainerImpl

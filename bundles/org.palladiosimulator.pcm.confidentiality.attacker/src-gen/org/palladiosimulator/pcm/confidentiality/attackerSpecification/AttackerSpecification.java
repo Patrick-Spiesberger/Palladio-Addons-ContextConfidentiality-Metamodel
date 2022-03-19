@@ -4,6 +4,8 @@ package org.palladiosimulator.pcm.confidentiality.attackerSpecification;
 
 import org.eclipse.emf.cdo.CDOObject;
 
+import org.eclipse.emf.common.util.EList;
+
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Specification</b></em>'.
@@ -18,6 +20,7 @@ import org.eclipse.emf.cdo.CDOObject;
  *   <li>{@link org.palladiosimulator.pcm.confidentiality.attackerSpecification.AttackerSpecification#getVulnerabilites <em>Vulnerabilites</em>}</li>
  *   <li>{@link org.palladiosimulator.pcm.confidentiality.attackerSpecification.AttackerSpecification#getCategoryspecification <em>Categoryspecification</em>}</li>
  *   <li>{@link org.palladiosimulator.pcm.confidentiality.attackerSpecification.AttackerSpecification#getSystemintegration <em>Systemintegration</em>}</li>
+ *   <li>{@link org.palladiosimulator.pcm.confidentiality.attackerSpecification.AttackerSpecification#getMitigation <em>Mitigation</em>}</li>
  * </ul>
  *
  * @see org.palladiosimulator.pcm.confidentiality.attackerSpecification.AttackerPackage#getAttackerSpecification()
@@ -25,7 +28,8 @@ import org.eclipse.emf.cdo.CDOObject;
  * @extends CDOObject
  * @generated
  */
-public interface AttackerSpecification extends CDOObject {
+public interface AttackerSpecification extends CDOObject
+{
 	/**
 	 * Returns the value of the '<em><b>Attackers</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
@@ -135,5 +139,17 @@ public interface AttackerSpecification extends CDOObject {
 	 * @generated
 	 */
 	void setSystemintegration(AttackerSystemSpecificationContainer value);
+
+	/**
+	 * Returns the value of the '<em><b>Mitigation</b></em>' containment reference list.
+	 * The list contents are of type {@link org.palladiosimulator.pcm.confidentiality.attackerSpecification.Mitigation}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Mitigation</em>' containment reference list.
+	 * @see org.palladiosimulator.pcm.confidentiality.attackerSpecification.AttackerPackage#getAttackerSpecification_Mitigation()
+	 * @model containment="true"
+	 * @generated
+	 */
+	EList<Mitigation> getMitigation();
 
 } // AttackerSpecification

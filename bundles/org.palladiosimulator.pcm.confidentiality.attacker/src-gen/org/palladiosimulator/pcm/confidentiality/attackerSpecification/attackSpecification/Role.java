@@ -14,5 +14,6 @@ import org.palladiosimulator.pcm.core.entity.Entity;
  * @model
  * @generated
  */
-public interface Role extends Entity {
+public interface Role extends Entity
+{
 } // Role

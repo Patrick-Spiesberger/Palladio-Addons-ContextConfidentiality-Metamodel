@@ -25,7 +25,8 @@ import org.palladiosimulator.pcm.core.entity.EntityPackage;
  * @model kind="package"
  * @generated
  */
-public interface AttackSpecificationPackage extends EPackage {
+public interface AttackSpecificationPackage extends EPackage
+{
 	/**
 	 * The package name.
 	 * <!-- begin-user-doc -->
@@ -56,8 +57,7 @@ public interface AttackSpecificationPackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	AttackSpecificationPackage eINSTANCE = org.palladiosimulator.pcm.confidentiality.attackerSpecification.attackSpecification.impl.AttackSpecificationPackageImpl
-			.init();
+	AttackSpecificationPackage eINSTANCE = org.palladiosimulator.pcm.confidentiality.attackerSpecification.attackSpecification.impl.AttackSpecificationPackageImpl.init();
 
 	/**
 	 * The meta object id for the '{@link org.palladiosimulator.pcm.confidentiality.attackerSpecification.attackSpecification.impl.AttackImpl <em>Attack</em>}' class.
@@ -850,6 +850,7 @@ public interface AttackSpecificationPackage extends EPackage {
 	 */
 	int AVAILABILITY_IMPACT = 16;
 
+
 	/**
 	 * Returns the meta object for class '{@link org.palladiosimulator.pcm.confidentiality.attackerSpecification.attackSpecification.Attack <em>Attack</em>}'.
 	 * <!-- begin-user-doc -->
@@ -1217,7 +1218,8 @@ public interface AttackSpecificationPackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	interface Literals {
+	interface Literals
+	{
 		/**
 		 * The meta object literal for the '{@link org.palladiosimulator.pcm.confidentiality.attackerSpecification.attackSpecification.impl.AttackImpl <em>Attack</em>}' class.
 		 * <!-- begin-user-doc -->

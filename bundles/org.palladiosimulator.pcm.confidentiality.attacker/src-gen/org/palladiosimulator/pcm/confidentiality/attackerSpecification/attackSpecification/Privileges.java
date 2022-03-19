@@ -17,7 +17,8 @@ import org.eclipse.emf.common.util.Enumerator;
  * @model
  * @generated
  */
-public enum Privileges implements Enumerator {
+public enum Privileges implements Enumerator
+{
 	/**
 	 * The '<em><b>None</b></em>' literal object.
 	 * <!-- begin-user-doc -->
@@ -87,7 +88,13 @@ public enum Privileges implements Enumerator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private static final Privileges[] VALUES_ARRAY = new Privileges[] { NONE, LOW, SPECIAL, };
+	private static final Privileges[] VALUES_ARRAY =
+		new Privileges[]
+		{
+			NONE,
+			LOW,
+			SPECIAL,
+		};
 
 	/**
 	 * A public read-only list of all the '<em><b>Privileges</b></em>' enumerators.
@@ -105,10 +112,13 @@ public enum Privileges implements Enumerator {
 	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
-	public static Privileges get(String literal) {
-		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
+	public static Privileges get(String literal)
+	{
+		for (int i = 0; i < VALUES_ARRAY.length; ++i)
+		{
 			Privileges result = VALUES_ARRAY[i];
-			if (result.toString().equals(literal)) {
+			if (result.toString().equals(literal))
+			{
 				return result;
 			}
 		}
@@ -123,10 +133,13 @@ public enum Privileges implements Enumerator {
 	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
-	public static Privileges getByName(String name) {
-		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
+	public static Privileges getByName(String name)
+	{
+		for (int i = 0; i < VALUES_ARRAY.length; ++i)
+		{
 			Privileges result = VALUES_ARRAY[i];
-			if (result.getName().equals(name)) {
+			if (result.getName().equals(name))
+			{
 				return result;
 			}
 		}
@@ -141,14 +154,13 @@ public enum Privileges implements Enumerator {
 	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
-	public static Privileges get(int value) {
-		switch (value) {
-		case NONE_VALUE:
-			return NONE;
-		case LOW_VALUE:
-			return LOW;
-		case SPECIAL_VALUE:
-			return SPECIAL;
+	public static Privileges get(int value)
+	{
+		switch (value)
+		{
+			case NONE_VALUE: return NONE;
+			case LOW_VALUE: return LOW;
+			case SPECIAL_VALUE: return SPECIAL;
 		}
 		return null;
 	}
@@ -180,7 +192,8 @@ public enum Privileges implements Enumerator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private Privileges(int value, String name, String literal) {
+	private Privileges(int value, String name, String literal)
+	{
 		this.value = value;
 		this.name = name;
 		this.literal = literal;
@@ -191,8 +204,9 @@ public enum Privileges implements Enumerator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public int getValue() {
-		return value;
+	public int getValue()
+	{
+	  return value;
 	}
 
 	/**
@@ -200,8 +214,9 @@ public enum Privileges implements Enumerator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getName() {
-		return name;
+	public String getName()
+	{
+	  return name;
 	}
 
 	/**
@@ -209,8 +224,9 @@ public enum Privileges implements Enumerator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getLiteral() {
-		return literal;
+	public String getLiteral()
+	{
+	  return literal;
 	}
 
 	/**
@@ -220,8 +236,9 @@ public enum Privileges implements Enumerator {
 	 * @generated
 	 */
 	@Override
-	public String toString() {
+	public String toString()
+	{
 		return literal;
 	}
-
+	
 } //Privileges

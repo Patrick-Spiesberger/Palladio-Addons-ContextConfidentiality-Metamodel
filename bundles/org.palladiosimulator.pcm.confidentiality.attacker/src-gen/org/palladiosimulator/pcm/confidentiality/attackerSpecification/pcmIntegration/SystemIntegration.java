@@ -20,7 +20,8 @@ import org.palladiosimulator.pcm.core.entity.Entity;
  * @model abstract="true"
  * @generated
  */
-public interface SystemIntegration extends Entity {
+public interface SystemIntegration extends Entity
+{
 	/**
 	 * Returns the value of the '<em><b>Pcmelement</b></em>' containment reference.
 	 * <!-- begin-user-doc -->

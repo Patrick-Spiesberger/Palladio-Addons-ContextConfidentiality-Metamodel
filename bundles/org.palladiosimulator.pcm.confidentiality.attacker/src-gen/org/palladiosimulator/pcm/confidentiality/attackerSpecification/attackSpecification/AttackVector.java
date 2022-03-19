@@ -17,7 +17,8 @@ import org.eclipse.emf.common.util.Enumerator;
  * @model
  * @generated
  */
-public enum AttackVector implements Enumerator {
+public enum AttackVector implements Enumerator
+{
 	/**
 	 * The '<em><b>Network</b></em>' literal object.
 	 * <!-- begin-user-doc -->
@@ -87,7 +88,13 @@ public enum AttackVector implements Enumerator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private static final AttackVector[] VALUES_ARRAY = new AttackVector[] { NETWORK, ADJACENT_NETWORK, LOCAL, };
+	private static final AttackVector[] VALUES_ARRAY =
+		new AttackVector[]
+		{
+			NETWORK,
+			ADJACENT_NETWORK,
+			LOCAL,
+		};
 
 	/**
 	 * A public read-only list of all the '<em><b>Attack Vector</b></em>' enumerators.
@@ -105,10 +112,13 @@ public enum AttackVector implements Enumerator {
 	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
-	public static AttackVector get(String literal) {
-		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
+	public static AttackVector get(String literal)
+	{
+		for (int i = 0; i < VALUES_ARRAY.length; ++i)
+		{
 			AttackVector result = VALUES_ARRAY[i];
-			if (result.toString().equals(literal)) {
+			if (result.toString().equals(literal))
+			{
 				return result;
 			}
 		}
@@ -123,10 +133,13 @@ public enum AttackVector implements Enumerator {
 	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
-	public static AttackVector getByName(String name) {
-		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
+	public static AttackVector getByName(String name)
+	{
+		for (int i = 0; i < VALUES_ARRAY.length; ++i)
+		{
 			AttackVector result = VALUES_ARRAY[i];
-			if (result.getName().equals(name)) {
+			if (result.getName().equals(name))
+			{
 				return result;
 			}
 		}
@@ -141,14 +154,13 @@ public enum AttackVector implements Enumerator {
 	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
-	public static AttackVector get(int value) {
-		switch (value) {
-		case NETWORK_VALUE:
-			return NETWORK;
-		case ADJACENT_NETWORK_VALUE:
-			return ADJACENT_NETWORK;
-		case LOCAL_VALUE:
-			return LOCAL;
+	public static AttackVector get(int value)
+	{
+		switch (value)
+		{
+			case NETWORK_VALUE: return NETWORK;
+			case ADJACENT_NETWORK_VALUE: return ADJACENT_NETWORK;
+			case LOCAL_VALUE: return LOCAL;
 		}
 		return null;
 	}
@@ -180,7 +192,8 @@ public enum AttackVector implements Enumerator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private AttackVector(int value, String name, String literal) {
+	private AttackVector(int value, String name, String literal)
+	{
 		this.value = value;
 		this.name = name;
 		this.literal = literal;
@@ -191,8 +204,9 @@ public enum AttackVector implements Enumerator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public int getValue() {
-		return value;
+	public int getValue()
+	{
+	  return value;
 	}
 
 	/**
@@ -200,8 +214,9 @@ public enum AttackVector implements Enumerator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getName() {
-		return name;
+	public String getName()
+	{
+	  return name;
 	}
 
 	/**
@@ -209,8 +224,9 @@ public enum AttackVector implements Enumerator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getLiteral() {
-		return literal;
+	public String getLiteral()
+	{
+	  return literal;
 	}
 
 	/**
@@ -220,8 +236,9 @@ public enum AttackVector implements Enumerator {
 	 * @generated
 	 */
 	@Override
-	public String toString() {
+	public String toString()
+	{
 		return literal;
 	}
-
+	
 } //AttackVector

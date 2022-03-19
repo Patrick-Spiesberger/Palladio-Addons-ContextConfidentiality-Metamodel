@@ -18,21 +18,26 @@ import org.palladiosimulator.pcm.confidentiality.attackerSpecification.pcmIntegr
  * <!-- end-user-doc -->
  * @generated
  */
-public class PcmIntegrationFactoryImpl extends EFactoryImpl implements PcmIntegrationFactory {
+public class PcmIntegrationFactoryImpl extends EFactoryImpl implements PcmIntegrationFactory
+{
 	/**
 	 * Creates the default factory implementation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static PcmIntegrationFactory init() {
-		try {
-			PcmIntegrationFactory thePcmIntegrationFactory = (PcmIntegrationFactory) EPackage.Registry.INSTANCE
-					.getEFactory(PcmIntegrationPackage.eNS_URI);
-			if (thePcmIntegrationFactory != null) {
+	public static PcmIntegrationFactory init()
+	{
+		try
+		{
+			PcmIntegrationFactory thePcmIntegrationFactory = (PcmIntegrationFactory)EPackage.Registry.INSTANCE.getEFactory(PcmIntegrationPackage.eNS_URI);
+			if (thePcmIntegrationFactory != null)
+			{
 				return thePcmIntegrationFactory;
 			}
-		} catch (Exception exception) {
+		}
+		catch (Exception exception)
+		{
 			EcorePlugin.INSTANCE.log(exception);
 		}
 		return new PcmIntegrationFactoryImpl();
@@ -44,7 +49,8 @@ public class PcmIntegrationFactoryImpl extends EFactoryImpl implements PcmIntegr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PcmIntegrationFactoryImpl() {
+	public PcmIntegrationFactoryImpl()
+	{
 		super();
 	}
 
@@ -54,18 +60,18 @@ public class PcmIntegrationFactoryImpl extends EFactoryImpl implements PcmIntegr
 	 * @generated
 	 */
 	@Override
-	public EObject create(EClass eClass) {
-		switch (eClass.getClassifierID()) {
-		case PcmIntegrationPackage.VULNERABILITY_SYSTEM_INTEGRATION:
-			return createVulnerabilitySystemIntegration();
-		case PcmIntegrationPackage.PCM_ELEMENT:
-			return createPCMElement();
-		case PcmIntegrationPackage.ROLE_SYSTEM_INTEGRATION:
-			return createRoleSystemIntegration();
-		case PcmIntegrationPackage.NON_GLOBAL_COMMUNICATION:
-			return createNonGlobalCommunication();
-		default:
-			throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
+	public EObject create(EClass eClass)
+	{
+		switch (eClass.getClassifierID())
+		{
+			case PcmIntegrationPackage.VULNERABILITY_SYSTEM_INTEGRATION: return createVulnerabilitySystemIntegration();
+			case PcmIntegrationPackage.PCM_ELEMENT: return createPCMElement();
+			case PcmIntegrationPackage.ROLE_SYSTEM_INTEGRATION: return createRoleSystemIntegration();
+			case PcmIntegrationPackage.NON_GLOBAL_COMMUNICATION: return createNonGlobalCommunication();
+			case PcmIntegrationPackage.PREVENTION: return createPrevention();
+			case PcmIntegrationPackage.ATTACK_VECTOR_INTEGRATION: return createAttackVectorIntegration();
+			default:
+				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
 	}
 
@@ -74,7 +80,8 @@ public class PcmIntegrationFactoryImpl extends EFactoryImpl implements PcmIntegr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public VulnerabilitySystemIntegration createVulnerabilitySystemIntegration() {
+	public VulnerabilitySystemIntegration createVulnerabilitySystemIntegration()
+	{
 		VulnerabilitySystemIntegrationImpl vulnerabilitySystemIntegration = new VulnerabilitySystemIntegrationImpl();
 		return vulnerabilitySystemIntegration;
 	}
@@ -84,7 +91,8 @@ public class PcmIntegrationFactoryImpl extends EFactoryImpl implements PcmIntegr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PCMElement createPCMElement() {
+	public PCMElement createPCMElement()
+	{
 		PCMElementImpl pcmElement = new PCMElementImpl();
 		return pcmElement;
 	}
@@ -94,7 +102,8 @@ public class PcmIntegrationFactoryImpl extends EFactoryImpl implements PcmIntegr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public RoleSystemIntegration createRoleSystemIntegration() {
+	public RoleSystemIntegration createRoleSystemIntegration()
+	{
 		RoleSystemIntegrationImpl roleSystemIntegration = new RoleSystemIntegrationImpl();
 		return roleSystemIntegration;
 	}
@@ -104,7 +113,8 @@ public class PcmIntegrationFactoryImpl extends EFactoryImpl implements PcmIntegr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NonGlobalCommunication createNonGlobalCommunication() {
+	public NonGlobalCommunication createNonGlobalCommunication()
+	{
 		NonGlobalCommunicationImpl nonGlobalCommunication = new NonGlobalCommunicationImpl();
 		return nonGlobalCommunication;
 	}
@@ -114,8 +124,31 @@ public class PcmIntegrationFactoryImpl extends EFactoryImpl implements PcmIntegr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PcmIntegrationPackage getPcmIntegrationPackage() {
-		return (PcmIntegrationPackage) getEPackage();
+	public Prevention createPrevention()
+	{
+		PreventionImpl prevention = new PreventionImpl();
+		return prevention;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public AttackVectorIntegration createAttackVectorIntegration()
+	{
+		AttackVectorIntegrationImpl attackVectorIntegration = new AttackVectorIntegrationImpl();
+		return attackVectorIntegration;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PcmIntegrationPackage getPcmIntegrationPackage()
+	{
+		return (PcmIntegrationPackage)getEPackage();
 	}
 
 	/**
@@ -125,7 +158,8 @@ public class PcmIntegrationFactoryImpl extends EFactoryImpl implements PcmIntegr
 	 * @generated
 	 */
 	@Deprecated
-	public static PcmIntegrationPackage getPackage() {
+	public static PcmIntegrationPackage getPackage()
+	{
 		return PcmIntegrationPackage.eINSTANCE;
 	}
 

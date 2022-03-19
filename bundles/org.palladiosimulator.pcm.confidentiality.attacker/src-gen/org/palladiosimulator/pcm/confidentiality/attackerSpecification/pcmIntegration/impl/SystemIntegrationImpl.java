@@ -23,13 +23,15 @@ import org.palladiosimulator.pcm.core.entity.impl.EntityImpl;
  *
  * @generated
  */
-public abstract class SystemIntegrationImpl extends EntityImpl implements SystemIntegration {
+public abstract class SystemIntegrationImpl extends EntityImpl implements SystemIntegration
+{
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected SystemIntegrationImpl() {
+	protected SystemIntegrationImpl()
+	{
 		super();
 	}
 
@@ -39,7 +41,8 @@ public abstract class SystemIntegrationImpl extends EntityImpl implements System
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass() {
+	protected EClass eStaticClass()
+	{
 		return PcmIntegrationPackage.Literals.SYSTEM_INTEGRATION;
 	}
 
@@ -48,8 +51,9 @@ public abstract class SystemIntegrationImpl extends EntityImpl implements System
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PCMElement getPcmelement() {
-		return (PCMElement) eGet(PcmIntegrationPackage.Literals.SYSTEM_INTEGRATION__PCMELEMENT, true);
+	public PCMElement getPcmelement()
+	{
+		return (PCMElement)eGet(PcmIntegrationPackage.Literals.SYSTEM_INTEGRATION__PCMELEMENT, true);
 	}
 
 	/**
@@ -57,7 +61,8 @@ public abstract class SystemIntegrationImpl extends EntityImpl implements System
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setPcmelement(PCMElement newPcmelement) {
+	public void setPcmelement(PCMElement newPcmelement)
+	{
 		eSet(PcmIntegrationPackage.Literals.SYSTEM_INTEGRATION__PCMELEMENT, newPcmelement);
 	}
 

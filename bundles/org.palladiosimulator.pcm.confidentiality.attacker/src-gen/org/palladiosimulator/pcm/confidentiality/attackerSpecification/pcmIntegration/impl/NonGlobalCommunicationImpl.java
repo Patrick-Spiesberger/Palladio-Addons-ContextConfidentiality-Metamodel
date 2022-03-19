@@ -14,13 +14,15 @@ import org.palladiosimulator.pcm.confidentiality.attackerSpecification.pcmIntegr
  *
  * @generated
  */
-public class NonGlobalCommunicationImpl extends SystemIntegrationImpl implements NonGlobalCommunication {
+public class NonGlobalCommunicationImpl extends SystemIntegrationImpl implements NonGlobalCommunication
+{
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected NonGlobalCommunicationImpl() {
+	protected NonGlobalCommunicationImpl()
+	{
 		super();
 	}
 
@@ -30,7 +32,8 @@ public class NonGlobalCommunicationImpl extends SystemIntegrationImpl implements
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass() {
+	protected EClass eStaticClass()
+	{
 		return PcmIntegrationPackage.Literals.NON_GLOBAL_COMMUNICATION;
 	}
 

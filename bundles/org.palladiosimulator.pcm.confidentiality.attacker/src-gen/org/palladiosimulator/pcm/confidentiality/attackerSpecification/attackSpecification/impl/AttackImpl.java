@@ -18,13 +18,15 @@ import org.palladiosimulator.pcm.core.entity.impl.EntityImpl;
  *
  * @generated
  */
-public abstract class AttackImpl extends EntityImpl implements Attack {
+public abstract class AttackImpl extends EntityImpl implements Attack
+{
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected AttackImpl() {
+	protected AttackImpl()
+	{
 		super();
 	}
 
@@ -34,7 +36,8 @@ public abstract class AttackImpl extends EntityImpl implements Attack {
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass() {
+	protected EClass eStaticClass()
+	{
 		return AttackSpecificationPackage.Literals.ATTACK;
 	}
 
@@ -43,7 +46,8 @@ public abstract class AttackImpl extends EntityImpl implements Attack {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean canExploit(Vulnerability vulnerability, boolean authentificated, AttackVector attackVector) {
+	public boolean canExploit(Vulnerability vulnerability, boolean authentificated, AttackVector attackVector)
+	{
 		// TODO: implement this method
 		// Ensure that you remove @generated or mark it @generated NOT
 		throw new UnsupportedOperationException();

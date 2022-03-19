@@ -2,6 +2,7 @@
  */
 package org.palladiosimulator.pcm.confidentiality.attackerSpecification.pcmIntegration;
 
+
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Non Global Communication</b></em>'.
@@ -12,5 +13,6 @@ package org.palladiosimulator.pcm.confidentiality.attackerSpecification.pcmInteg
  * @model
  * @generated
  */
-public interface NonGlobalCommunication extends SystemIntegration {
+public interface NonGlobalCommunication extends SystemIntegration
+{
 } // NonGlobalCommunication

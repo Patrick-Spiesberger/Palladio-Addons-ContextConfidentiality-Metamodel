@@ -2,6 +2,7 @@
  */
 package org.palladiosimulator.pcm.confidentiality.attackerSpecification.attackSpecification.provider;
 
+
 import java.util.Collection;
 import java.util.List;
 
@@ -24,14 +25,16 @@ import org.palladiosimulator.pcm.core.entity.provider.EntityItemProvider;
  * <!-- end-user-doc -->
  * @generated
  */
-public class RoleItemProvider extends EntityItemProvider {
+public class RoleItemProvider extends EntityItemProvider
+{
 	/**
 	 * This constructs an instance from a factory and a notifier.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public RoleItemProvider(AdapterFactory adapterFactory) {
+	public RoleItemProvider(AdapterFactory adapterFactory)
+	{
 		super(adapterFactory);
 	}
 
@@ -42,8 +45,10 @@ public class RoleItemProvider extends EntityItemProvider {
 	 * @generated
 	 */
 	@Override
-	public List<IItemPropertyDescriptor> getPropertyDescriptors(Object object) {
-		if (itemPropertyDescriptors == null) {
+	public List<IItemPropertyDescriptor> getPropertyDescriptors(Object object)
+	{
+		if (itemPropertyDescriptors == null)
+		{
 			super.getPropertyDescriptors(object);
 
 		}
@@ -57,7 +62,8 @@ public class RoleItemProvider extends EntityItemProvider {
 	 * @generated
 	 */
 	@Override
-	public Object getImage(Object object) {
+	public Object getImage(Object object)
+	{
 		return overlayImage(object, getResourceLocator().getImage("full/obj16/Role"));
 	}
 
@@ -67,7 +73,8 @@ public class RoleItemProvider extends EntityItemProvider {
 	 * @generated
 	 */
 	@Override
-	protected boolean shouldComposeCreationImage() {
+	protected boolean shouldComposeCreationImage()
+	{
 		return true;
 	}
 
@@ -78,11 +85,14 @@ public class RoleItemProvider extends EntityItemProvider {
 	 * @generated
 	 */
 	@Override
-	public String getText(Object object) {
-		String label = ((Role) object).getId();
-		return label == null || label.length() == 0 ? getString("_UI_Role_type")
-				: getString("_UI_Role_type") + " " + label;
+	public String getText(Object object)
+	{
+		String label = ((Role)object).getId();
+		return label == null || label.length() == 0 ?
+			getString("_UI_Role_type") :
+			getString("_UI_Role_type") + " " + label;
 	}
+
 
 	/**
 	 * This handles model notifications by calling {@link #updateChildren} to update any cached
@@ -92,7 +102,8 @@ public class RoleItemProvider extends EntityItemProvider {
 	 * @generated
 	 */
 	@Override
-	public void notifyChanged(Notification notification) {
+	public void notifyChanged(Notification notification)
+	{
 		updateChildren(notification);
 		super.notifyChanged(notification);
 	}
@@ -105,7 +116,8 @@ public class RoleItemProvider extends EntityItemProvider {
 	 * @generated
 	 */
 	@Override
-	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
+	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object)
+	{
 		super.collectNewChildDescriptors(newChildDescriptors, object);
 	}
 
@@ -116,7 +128,8 @@ public class RoleItemProvider extends EntityItemProvider {
 	 * @generated
 	 */
 	@Override
-	public ResourceLocator getResourceLocator() {
+	public ResourceLocator getResourceLocator()
+	{
 		return AttackerEditPlugin.INSTANCE;
 	}
 

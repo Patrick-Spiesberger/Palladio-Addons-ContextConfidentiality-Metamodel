@@ -25,7 +25,8 @@ import org.palladiosimulator.pcm.confidentiality.attackerSpecification.pcmIntegr
  * @extends CDOObject
  * @generated
  */
-public interface AttackerSystemSpecificationContainer extends CDOObject {
+public interface AttackerSystemSpecificationContainer extends CDOObject
+{
 	/**
 	 * Returns the value of the '<em><b>Vulnerabilities</b></em>' containment reference list.
 	 * The list contents are of type {@link org.palladiosimulator.pcm.confidentiality.attackerSpecification.pcmIntegration.SystemIntegration}.

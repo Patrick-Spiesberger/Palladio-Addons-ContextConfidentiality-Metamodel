@@ -2,6 +2,8 @@
  */
 package org.palladiosimulator.pcm.confidentiality.attackerSpecification.pcmIntegration;
 
+import org.palladiosimulator.pcm.confidentiality.attackerSpecification.Mitigation;
+
 import org.palladiosimulator.pcm.confidentiality.context.system.pcm.structure.MethodSpecification;
 
 import org.palladiosimulator.pcm.core.composition.AssemblyContext;
@@ -29,13 +31,15 @@ import org.palladiosimulator.pcm.resourceenvironment.ResourceContainer;
  *   <li>{@link org.palladiosimulator.pcm.confidentiality.attackerSpecification.pcmIntegration.PCMElement#getBasiccomponent <em>Basiccomponent</em>}</li>
  *   <li>{@link org.palladiosimulator.pcm.confidentiality.attackerSpecification.pcmIntegration.PCMElement#getAssemblycontext <em>Assemblycontext</em>}</li>
  *   <li>{@link org.palladiosimulator.pcm.confidentiality.attackerSpecification.pcmIntegration.PCMElement#getMethodspecification <em>Methodspecification</em>}</li>
+ *   <li>{@link org.palladiosimulator.pcm.confidentiality.attackerSpecification.pcmIntegration.PCMElement#getMitigation <em>Mitigation</em>}</li>
  * </ul>
  *
  * @see org.palladiosimulator.pcm.confidentiality.attackerSpecification.pcmIntegration.PcmIntegrationPackage#getPCMElement()
  * @model
  * @generated
  */
-public interface PCMElement extends Entity {
+public interface PCMElement extends Entity
+{
 	/**
 	 * Returns the value of the '<em><b>Resourcecontainer</b></em>' reference.
 	 * <!-- begin-user-doc -->
@@ -167,5 +171,27 @@ public interface PCMElement extends Entity {
 	 * @generated
 	 */
 	void setMethodspecification(MethodSpecification value);
+
+	/**
+	 * Returns the value of the '<em><b>Mitigation</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Mitigation</em>' reference.
+	 * @see #setMitigation(Mitigation)
+	 * @see org.palladiosimulator.pcm.confidentiality.attackerSpecification.pcmIntegration.PcmIntegrationPackage#getPCMElement_Mitigation()
+	 * @model
+	 * @generated
+	 */
+	Mitigation getMitigation();
+
+	/**
+	 * Sets the value of the '{@link org.palladiosimulator.pcm.confidentiality.attackerSpecification.pcmIntegration.PCMElement#getMitigation <em>Mitigation</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Mitigation</em>' reference.
+	 * @see #getMitigation()
+	 * @generated
+	 */
+	void setMitigation(Mitigation value);
 
 } // PCMElement

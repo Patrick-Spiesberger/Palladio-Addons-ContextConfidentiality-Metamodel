@@ -26,13 +26,15 @@ import org.palladiosimulator.pcm.confidentiality.attackerSpecification.attackSpe
  *
  * @generated
  */
-public class CategorySpecificationImpl extends CDOObjectImpl implements CategorySpecification {
+public class CategorySpecificationImpl extends CDOObjectImpl implements CategorySpecification
+{
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected CategorySpecificationImpl() {
+	protected CategorySpecificationImpl()
+	{
 		super();
 	}
 
@@ -42,7 +44,8 @@ public class CategorySpecificationImpl extends CDOObjectImpl implements Category
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass() {
+	protected EClass eStaticClass()
+	{
 		return AttackerPackage.Literals.CATEGORY_SPECIFICATION;
 	}
 
@@ -52,7 +55,8 @@ public class CategorySpecificationImpl extends CDOObjectImpl implements Category
 	 * @generated
 	 */
 	@Override
-	protected int eStaticFeatureCount() {
+	protected int eStaticFeatureCount()
+	{
 		return 0;
 	}
 
@@ -62,8 +66,9 @@ public class CategorySpecificationImpl extends CDOObjectImpl implements Category
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
-	public EList<AttackCategory> getCategories() {
-		return (EList<AttackCategory>) eGet(AttackerPackage.Literals.CATEGORY_SPECIFICATION__CATEGORIES, true);
+	public EList<AttackCategory> getCategories()
+	{
+		return (EList<AttackCategory>)eGet(AttackerPackage.Literals.CATEGORY_SPECIFICATION__CATEGORIES, true);
 	}
 
 } //CategorySpecificationImpl

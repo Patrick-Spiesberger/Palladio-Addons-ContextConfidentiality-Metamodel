@@ -2,6 +2,8 @@
  */
 package org.palladiosimulator.pcm.confidentiality.attackerSpecification.impl;
 
+import org.eclipse.emf.common.util.EList;
+
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.internal.cdo.CDOObjectImpl;
@@ -12,6 +14,7 @@ import org.palladiosimulator.pcm.confidentiality.attackerSpecification.AttackerP
 import org.palladiosimulator.pcm.confidentiality.attackerSpecification.AttackerSpecification;
 import org.palladiosimulator.pcm.confidentiality.attackerSpecification.AttackerSystemSpecificationContainer;
 import org.palladiosimulator.pcm.confidentiality.attackerSpecification.CategorySpecification;
+import org.palladiosimulator.pcm.confidentiality.attackerSpecification.Mitigation;
 import org.palladiosimulator.pcm.confidentiality.attackerSpecification.VulnerabilityContainer;
 
 /**
@@ -27,17 +30,20 @@ import org.palladiosimulator.pcm.confidentiality.attackerSpecification.Vulnerabi
  *   <li>{@link org.palladiosimulator.pcm.confidentiality.attackerSpecification.impl.AttackerSpecificationImpl#getVulnerabilites <em>Vulnerabilites</em>}</li>
  *   <li>{@link org.palladiosimulator.pcm.confidentiality.attackerSpecification.impl.AttackerSpecificationImpl#getCategoryspecification <em>Categoryspecification</em>}</li>
  *   <li>{@link org.palladiosimulator.pcm.confidentiality.attackerSpecification.impl.AttackerSpecificationImpl#getSystemintegration <em>Systemintegration</em>}</li>
+ *   <li>{@link org.palladiosimulator.pcm.confidentiality.attackerSpecification.impl.AttackerSpecificationImpl#getMitigation <em>Mitigation</em>}</li>
  * </ul>
  *
  * @generated
  */
-public class AttackerSpecificationImpl extends CDOObjectImpl implements AttackerSpecification {
+public class AttackerSpecificationImpl extends CDOObjectImpl implements AttackerSpecification
+{
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected AttackerSpecificationImpl() {
+	protected AttackerSpecificationImpl()
+	{
 		super();
 	}
 
@@ -47,7 +53,8 @@ public class AttackerSpecificationImpl extends CDOObjectImpl implements Attacker
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass() {
+	protected EClass eStaticClass()
+	{
 		return AttackerPackage.Literals.ATTACKER_SPECIFICATION;
 	}
 
@@ -57,7 +64,8 @@ public class AttackerSpecificationImpl extends CDOObjectImpl implements Attacker
 	 * @generated
 	 */
 	@Override
-	protected int eStaticFeatureCount() {
+	protected int eStaticFeatureCount()
+	{
 		return 0;
 	}
 
@@ -66,8 +74,9 @@ public class AttackerSpecificationImpl extends CDOObjectImpl implements Attacker
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AttackerContainer getAttackers() {
-		return (AttackerContainer) eGet(AttackerPackage.Literals.ATTACKER_SPECIFICATION__ATTACKERS, true);
+	public AttackerContainer getAttackers()
+	{
+		return (AttackerContainer)eGet(AttackerPackage.Literals.ATTACKER_SPECIFICATION__ATTACKERS, true);
 	}
 
 	/**
@@ -75,7 +84,8 @@ public class AttackerSpecificationImpl extends CDOObjectImpl implements Attacker
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAttackers(AttackerContainer newAttackers) {
+	public void setAttackers(AttackerContainer newAttackers)
+	{
 		eSet(AttackerPackage.Literals.ATTACKER_SPECIFICATION__ATTACKERS, newAttackers);
 	}
 
@@ -84,8 +94,9 @@ public class AttackerSpecificationImpl extends CDOObjectImpl implements Attacker
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AttackContainer getAttacks() {
-		return (AttackContainer) eGet(AttackerPackage.Literals.ATTACKER_SPECIFICATION__ATTACKS, true);
+	public AttackContainer getAttacks()
+	{
+		return (AttackContainer)eGet(AttackerPackage.Literals.ATTACKER_SPECIFICATION__ATTACKS, true);
 	}
 
 	/**
@@ -93,7 +104,8 @@ public class AttackerSpecificationImpl extends CDOObjectImpl implements Attacker
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAttacks(AttackContainer newAttacks) {
+	public void setAttacks(AttackContainer newAttacks)
+	{
 		eSet(AttackerPackage.Literals.ATTACKER_SPECIFICATION__ATTACKS, newAttacks);
 	}
 
@@ -102,8 +114,9 @@ public class AttackerSpecificationImpl extends CDOObjectImpl implements Attacker
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public VulnerabilityContainer getVulnerabilites() {
-		return (VulnerabilityContainer) eGet(AttackerPackage.Literals.ATTACKER_SPECIFICATION__VULNERABILITES, true);
+	public VulnerabilityContainer getVulnerabilites()
+	{
+		return (VulnerabilityContainer)eGet(AttackerPackage.Literals.ATTACKER_SPECIFICATION__VULNERABILITES, true);
 	}
 
 	/**
@@ -111,7 +124,8 @@ public class AttackerSpecificationImpl extends CDOObjectImpl implements Attacker
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setVulnerabilites(VulnerabilityContainer newVulnerabilites) {
+	public void setVulnerabilites(VulnerabilityContainer newVulnerabilites)
+	{
 		eSet(AttackerPackage.Literals.ATTACKER_SPECIFICATION__VULNERABILITES, newVulnerabilites);
 	}
 
@@ -120,9 +134,9 @@ public class AttackerSpecificationImpl extends CDOObjectImpl implements Attacker
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CategorySpecification getCategoryspecification() {
-		return (CategorySpecification) eGet(AttackerPackage.Literals.ATTACKER_SPECIFICATION__CATEGORYSPECIFICATION,
-				true);
+	public CategorySpecification getCategoryspecification()
+	{
+		return (CategorySpecification)eGet(AttackerPackage.Literals.ATTACKER_SPECIFICATION__CATEGORYSPECIFICATION, true);
 	}
 
 	/**
@@ -130,7 +144,8 @@ public class AttackerSpecificationImpl extends CDOObjectImpl implements Attacker
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setCategoryspecification(CategorySpecification newCategoryspecification) {
+	public void setCategoryspecification(CategorySpecification newCategoryspecification)
+	{
 		eSet(AttackerPackage.Literals.ATTACKER_SPECIFICATION__CATEGORYSPECIFICATION, newCategoryspecification);
 	}
 
@@ -139,9 +154,9 @@ public class AttackerSpecificationImpl extends CDOObjectImpl implements Attacker
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AttackerSystemSpecificationContainer getSystemintegration() {
-		return (AttackerSystemSpecificationContainer) eGet(
-				AttackerPackage.Literals.ATTACKER_SPECIFICATION__SYSTEMINTEGRATION, true);
+	public AttackerSystemSpecificationContainer getSystemintegration()
+	{
+		return (AttackerSystemSpecificationContainer)eGet(AttackerPackage.Literals.ATTACKER_SPECIFICATION__SYSTEMINTEGRATION, true);
 	}
 
 	/**
@@ -149,8 +164,20 @@ public class AttackerSpecificationImpl extends CDOObjectImpl implements Attacker
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setSystemintegration(AttackerSystemSpecificationContainer newSystemintegration) {
+	public void setSystemintegration(AttackerSystemSpecificationContainer newSystemintegration)
+	{
 		eSet(AttackerPackage.Literals.ATTACKER_SPECIFICATION__SYSTEMINTEGRATION, newSystemintegration);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	public EList<Mitigation> getMitigation()
+	{
+		return (EList<Mitigation>)eGet(AttackerPackage.Literals.ATTACKER_SPECIFICATION__MITIGATION, true);
 	}
 
 } //AttackerSpecificationImpl

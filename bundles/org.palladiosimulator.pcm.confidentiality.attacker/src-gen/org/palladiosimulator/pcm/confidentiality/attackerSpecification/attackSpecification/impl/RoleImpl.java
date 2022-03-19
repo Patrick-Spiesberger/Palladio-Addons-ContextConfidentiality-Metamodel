@@ -16,13 +16,15 @@ import org.palladiosimulator.pcm.core.entity.impl.EntityImpl;
  *
  * @generated
  */
-public class RoleImpl extends EntityImpl implements Role {
+public class RoleImpl extends EntityImpl implements Role
+{
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected RoleImpl() {
+	protected RoleImpl()
+	{
 		super();
 	}
 
@@ -32,7 +34,8 @@ public class RoleImpl extends EntityImpl implements Role {
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass() {
+	protected EClass eStaticClass()
+	{
 		return AttackSpecificationPackage.Literals.ROLE;
 	}
 

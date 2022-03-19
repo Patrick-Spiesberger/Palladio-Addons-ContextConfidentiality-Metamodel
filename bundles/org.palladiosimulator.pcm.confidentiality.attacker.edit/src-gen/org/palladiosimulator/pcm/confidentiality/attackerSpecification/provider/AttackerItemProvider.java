@@ -2,11 +2,14 @@
  */
 package org.palladiosimulator.pcm.confidentiality.attackerSpecification.provider;
 
+
 import java.util.Collection;
 import java.util.List;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
+
+import org.eclipse.emf.ecore.EStructuralFeature;
 
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
@@ -14,6 +17,7 @@ import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
 
 import org.palladiosimulator.pcm.confidentiality.attackerSpecification.Attacker;
+import org.palladiosimulator.pcm.confidentiality.attackerSpecification.AttackerFactory;
 import org.palladiosimulator.pcm.confidentiality.attackerSpecification.AttackerPackage;
 
 import org.palladiosimulator.pcm.core.entity.provider.EntityItemProvider;
@@ -24,14 +28,16 @@ import org.palladiosimulator.pcm.core.entity.provider.EntityItemProvider;
  * <!-- end-user-doc -->
  * @generated
  */
-public class AttackerItemProvider extends EntityItemProvider {
+public class AttackerItemProvider extends EntityItemProvider
+{
 	/**
 	 * This constructs an instance from a factory and a notifier.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AttackerItemProvider(AdapterFactory adapterFactory) {
+	public AttackerItemProvider(AdapterFactory adapterFactory)
+	{
 		super(adapterFactory);
 	}
 
@@ -42,16 +48,20 @@ public class AttackerItemProvider extends EntityItemProvider {
 	 * @generated
 	 */
 	@Override
-	public List<IItemPropertyDescriptor> getPropertyDescriptors(Object object) {
-		if (itemPropertyDescriptors == null) {
+	public List<IItemPropertyDescriptor> getPropertyDescriptors(Object object)
+	{
+		if (itemPropertyDescriptors == null)
+		{
 			super.getPropertyDescriptors(object);
 
 			addAttacksPropertyDescriptor(object);
-			addCompromisedComponentsPropertyDescriptor(object);
+			addCompromisedComponentsDetailsPropertyDescriptor(object);
 			addCompromisedResourcesPropertyDescriptor(object);
 			addCompromisedLinkingResourcesPropertyDescriptor(object);
 			addCredentialsPropertyDescriptor(object);
 			addExploitContextProvidersPropertyDescriptor(object);
+			addContextSelectionListEffortPropertyDescriptor(object);
+			addContextSelectionMaxTimePropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
@@ -62,29 +72,44 @@ public class AttackerItemProvider extends EntityItemProvider {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void addAttacksPropertyDescriptor(Object object) {
-		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_Attacker_attacks_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_Attacker_attacks_feature",
-								"_UI_Attacker_type"),
-						AttackerPackage.Literals.ATTACKER__ATTACKS, true, false, true, null, null, null));
+	protected void addAttacksPropertyDescriptor(Object object)
+	{
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_Attacker_attacks_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Attacker_attacks_feature", "_UI_Attacker_type"),
+				 AttackerPackage.Literals.ATTACKER__ATTACKS,
+				 true,
+				 false,
+				 true,
+				 null,
+				 null,
+				 null));
 	}
 
 	/**
-	 * This adds a property descriptor for the Compromised Components feature.
+	 * This adds a property descriptor for the Compromised Components Details feature.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void addCompromisedComponentsPropertyDescriptor(Object object) {
-		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_Attacker_compromisedComponents_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_Attacker_compromisedComponents_feature",
-								"_UI_Attacker_type"),
-						AttackerPackage.Literals.ATTACKER__COMPROMISED_COMPONENTS, true, false, true, null, null,
-						null));
+	protected void addCompromisedComponentsDetailsPropertyDescriptor(Object object)
+	{
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_Attacker_compromisedComponentsDetails_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Attacker_compromisedComponentsDetails_feature", "_UI_Attacker_type"),
+				 AttackerPackage.Literals.ATTACKER__COMPROMISED_COMPONENTS_DETAILS,
+				 true,
+				 false,
+				 true,
+				 null,
+				 null,
+				 null));
 	}
 
 	/**
@@ -93,13 +118,21 @@ public class AttackerItemProvider extends EntityItemProvider {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void addCompromisedResourcesPropertyDescriptor(Object object) {
-		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_Attacker_compromisedResources_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_Attacker_compromisedResources_feature",
-								"_UI_Attacker_type"),
-						AttackerPackage.Literals.ATTACKER__COMPROMISED_RESOURCES, true, false, true, null, null, null));
+	protected void addCompromisedResourcesPropertyDescriptor(Object object)
+	{
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_Attacker_compromisedResources_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Attacker_compromisedResources_feature", "_UI_Attacker_type"),
+				 AttackerPackage.Literals.ATTACKER__COMPROMISED_RESOURCES,
+				 true,
+				 false,
+				 true,
+				 null,
+				 null,
+				 null));
 	}
 
 	/**
@@ -108,13 +141,21 @@ public class AttackerItemProvider extends EntityItemProvider {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void addCompromisedLinkingResourcesPropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add(createItemPropertyDescriptor(
-				((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(), getResourceLocator(),
-				getString("_UI_Attacker_compromisedLinkingResources_feature"),
-				getString("_UI_PropertyDescriptor_description", "_UI_Attacker_compromisedLinkingResources_feature",
-						"_UI_Attacker_type"),
-				AttackerPackage.Literals.ATTACKER__COMPROMISED_LINKING_RESOURCES, true, false, true, null, null, null));
+	protected void addCompromisedLinkingResourcesPropertyDescriptor(Object object)
+	{
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_Attacker_compromisedLinkingResources_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Attacker_compromisedLinkingResources_feature", "_UI_Attacker_type"),
+				 AttackerPackage.Literals.ATTACKER__COMPROMISED_LINKING_RESOURCES,
+				 true,
+				 false,
+				 true,
+				 null,
+				 null,
+				 null));
 	}
 
 	/**
@@ -123,13 +164,21 @@ public class AttackerItemProvider extends EntityItemProvider {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void addCredentialsPropertyDescriptor(Object object) {
-		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_Attacker_credentials_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_Attacker_credentials_feature",
-								"_UI_Attacker_type"),
-						AttackerPackage.Literals.ATTACKER__CREDENTIALS, true, false, true, null, null, null));
+	protected void addCredentialsPropertyDescriptor(Object object)
+	{
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_Attacker_credentials_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Attacker_credentials_feature", "_UI_Attacker_type"),
+				 AttackerPackage.Literals.ATTACKER__CREDENTIALS,
+				 true,
+				 false,
+				 true,
+				 null,
+				 null,
+				 null));
 	}
 
 	/**
@@ -138,14 +187,100 @@ public class AttackerItemProvider extends EntityItemProvider {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void addExploitContextProvidersPropertyDescriptor(Object object) {
-		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_Attacker_exploitContextProviders_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_Attacker_exploitContextProviders_feature",
-								"_UI_Attacker_type"),
-						AttackerPackage.Literals.ATTACKER__EXPLOIT_CONTEXT_PROVIDERS, true, false, false,
-						ItemPropertyDescriptor.BOOLEAN_VALUE_IMAGE, null, null));
+	protected void addExploitContextProvidersPropertyDescriptor(Object object)
+	{
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_Attacker_exploitContextProviders_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Attacker_exploitContextProviders_feature", "_UI_Attacker_type"),
+				 AttackerPackage.Literals.ATTACKER__EXPLOIT_CONTEXT_PROVIDERS,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.BOOLEAN_VALUE_IMAGE,
+				 null,
+				 null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Context Selection List Effort feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addContextSelectionListEffortPropertyDescriptor(Object object)
+	{
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_Attacker_contextSelectionListEffort_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Attacker_contextSelectionListEffort_feature", "_UI_Attacker_type"),
+				 AttackerPackage.Literals.ATTACKER__CONTEXT_SELECTION_LIST_EFFORT,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 null,
+				 null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Context Selection Max Time feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addContextSelectionMaxTimePropertyDescriptor(Object object)
+	{
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_Attacker_contextSelectionMaxTime_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Attacker_contextSelectionMaxTime_feature", "_UI_Attacker_type"),
+				 AttackerPackage.Literals.ATTACKER__CONTEXT_SELECTION_MAX_TIME,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.INTEGRAL_VALUE_IMAGE,
+				 null,
+				 null));
+	}
+
+	/**
+	 * This specifies how to implement {@link #getChildren} and is used to deduce an appropriate feature for an
+	 * {@link org.eclipse.emf.edit.command.AddCommand}, {@link org.eclipse.emf.edit.command.RemoveCommand} or
+	 * {@link org.eclipse.emf.edit.command.MoveCommand} in {@link #createCommand}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object)
+	{
+		if (childrenFeatures == null)
+		{
+			super.getChildrenFeatures(object);
+			childrenFeatures.add(AttackerPackage.Literals.ATTACKER__COMPROMISED_COMPONENTS_DETAILS);
+		}
+		return childrenFeatures;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected EStructuralFeature getChildFeature(Object object, Object child)
+	{
+		// Check the type of the specified child object and return the proper feature to use for
+		// adding (see {@link AddCommand}) it as a child.
+
+		return super.getChildFeature(object, child);
 	}
 
 	/**
@@ -155,7 +290,8 @@ public class AttackerItemProvider extends EntityItemProvider {
 	 * @generated
 	 */
 	@Override
-	public Object getImage(Object object) {
+	public Object getImage(Object object)
+	{
 		return overlayImage(object, getResourceLocator().getImage("full/obj16/Attacker"));
 	}
 
@@ -165,7 +301,8 @@ public class AttackerItemProvider extends EntityItemProvider {
 	 * @generated
 	 */
 	@Override
-	protected boolean shouldComposeCreationImage() {
+	protected boolean shouldComposeCreationImage()
+	{
 		return true;
 	}
 
@@ -176,11 +313,14 @@ public class AttackerItemProvider extends EntityItemProvider {
 	 * @generated
 	 */
 	@Override
-	public String getText(Object object) {
-		String label = ((Attacker) object).getEntityName();
-		return label == null || label.length() == 0 ? getString("_UI_Attacker_type")
-				: getString("_UI_Attacker_type") + " " + label;
+	public String getText(Object object)
+	{
+		String label = ((Attacker)object).getEntityName();
+		return label == null || label.length() == 0 ?
+			getString("_UI_Attacker_type") :
+			getString("_UI_Attacker_type") + " " + label;
 	}
+
 
 	/**
 	 * This handles model notifications by calling {@link #updateChildren} to update any cached
@@ -190,13 +330,20 @@ public class AttackerItemProvider extends EntityItemProvider {
 	 * @generated
 	 */
 	@Override
-	public void notifyChanged(Notification notification) {
+	public void notifyChanged(Notification notification)
+	{
 		updateChildren(notification);
 
-		switch (notification.getFeatureID(Attacker.class)) {
-		case AttackerPackage.ATTACKER__EXPLOIT_CONTEXT_PROVIDERS:
-			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
-			return;
+		switch (notification.getFeatureID(Attacker.class))
+		{
+			case AttackerPackage.ATTACKER__EXPLOIT_CONTEXT_PROVIDERS:
+			case AttackerPackage.ATTACKER__CONTEXT_SELECTION_LIST_EFFORT:
+			case AttackerPackage.ATTACKER__CONTEXT_SELECTION_MAX_TIME:
+				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
+				return;
+			case AttackerPackage.ATTACKER__COMPROMISED_COMPONENTS_DETAILS:
+				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
+				return;
 		}
 		super.notifyChanged(notification);
 	}
@@ -209,8 +356,14 @@ public class AttackerItemProvider extends EntityItemProvider {
 	 * @generated
 	 */
 	@Override
-	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
+	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object)
+	{
 		super.collectNewChildDescriptors(newChildDescriptors, object);
+
+		newChildDescriptors.add
+			(createChildParameter
+				(AttackerPackage.Literals.ATTACKER__COMPROMISED_COMPONENTS_DETAILS,
+				 AttackerFactory.eINSTANCE.createAssemblyContextDetail()));
 	}
 
 }

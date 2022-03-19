@@ -20,7 +20,8 @@ import org.palladiosimulator.pcm.confidentiality.attackerSpecification.attackSpe
  * @model
  * @generated
  */
-public interface RoleSystemIntegration extends SystemIntegration {
+public interface RoleSystemIntegration extends SystemIntegration
+{
 	/**
 	 * Returns the value of the '<em><b>Role</b></em>' reference.
 	 * <!-- begin-user-doc -->

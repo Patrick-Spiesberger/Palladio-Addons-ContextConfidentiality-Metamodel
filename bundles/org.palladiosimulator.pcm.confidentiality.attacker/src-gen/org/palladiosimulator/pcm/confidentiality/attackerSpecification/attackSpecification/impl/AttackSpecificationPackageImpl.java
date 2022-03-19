@@ -66,7 +66,8 @@ import org.palladiosimulator.pcm.core.entity.EntityPackage;
  * <!-- end-user-doc -->
  * @generated
  */
-public class AttackSpecificationPackageImpl extends EPackageImpl implements AttackSpecificationPackage {
+public class AttackSpecificationPackageImpl extends EPackageImpl implements AttackSpecificationPackage
+{
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -201,7 +202,8 @@ public class AttackSpecificationPackageImpl extends EPackageImpl implements Atta
 	 * @see #init()
 	 * @generated
 	 */
-	private AttackSpecificationPackageImpl() {
+	private AttackSpecificationPackageImpl()
+	{
 		super(eNS_URI, AttackSpecificationFactory.eINSTANCE);
 	}
 
@@ -224,16 +226,13 @@ public class AttackSpecificationPackageImpl extends EPackageImpl implements Atta
 	 * @see #initializePackageContents()
 	 * @generated
 	 */
-	public static AttackSpecificationPackage init() {
-		if (isInited)
-			return (AttackSpecificationPackage) EPackage.Registry.INSTANCE
-					.getEPackage(AttackSpecificationPackage.eNS_URI);
+	public static AttackSpecificationPackage init()
+	{
+		if (isInited) return (AttackSpecificationPackage)EPackage.Registry.INSTANCE.getEPackage(AttackSpecificationPackage.eNS_URI);
 
 		// Obtain or create and register package
 		Object registeredAttackSpecificationPackage = EPackage.Registry.INSTANCE.get(eNS_URI);
-		AttackSpecificationPackageImpl theAttackSpecificationPackage = registeredAttackSpecificationPackage instanceof AttackSpecificationPackageImpl
-				? (AttackSpecificationPackageImpl) registeredAttackSpecificationPackage
-				: new AttackSpecificationPackageImpl();
+		AttackSpecificationPackageImpl theAttackSpecificationPackage = registeredAttackSpecificationPackage instanceof AttackSpecificationPackageImpl ? (AttackSpecificationPackageImpl)registeredAttackSpecificationPackage : new AttackSpecificationPackageImpl();
 
 		isInited = true;
 
@@ -249,13 +248,9 @@ public class AttackSpecificationPackageImpl extends EPackageImpl implements Atta
 
 		// Obtain or create and register interdependencies
 		Object registeredPackage = EPackage.Registry.INSTANCE.getEPackage(AttackerPackage.eNS_URI);
-		AttackerPackageImpl theAttackerPackage = (AttackerPackageImpl) (registeredPackage instanceof AttackerPackageImpl
-				? registeredPackage
-				: AttackerPackage.eINSTANCE);
+		AttackerPackageImpl theAttackerPackage = (AttackerPackageImpl)(registeredPackage instanceof AttackerPackageImpl ? registeredPackage : AttackerPackage.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(PcmIntegrationPackage.eNS_URI);
-		PcmIntegrationPackageImpl thePcmIntegrationPackage = (PcmIntegrationPackageImpl) (registeredPackage instanceof PcmIntegrationPackageImpl
-				? registeredPackage
-				: PcmIntegrationPackage.eINSTANCE);
+		PcmIntegrationPackageImpl thePcmIntegrationPackage = (PcmIntegrationPackageImpl)(registeredPackage instanceof PcmIntegrationPackageImpl ? registeredPackage : PcmIntegrationPackage.eINSTANCE);
 
 		// Create package meta-data objects
 		theAttackSpecificationPackage.createPackageContents();
@@ -280,7 +275,8 @@ public class AttackSpecificationPackageImpl extends EPackageImpl implements Atta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getAttack() {
+	public EClass getAttack()
+	{
 		return attackEClass;
 	}
 
@@ -289,7 +285,8 @@ public class AttackSpecificationPackageImpl extends EPackageImpl implements Atta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getVulnerability() {
+	public EClass getVulnerability()
+	{
 		return vulnerabilityEClass;
 	}
 
@@ -298,8 +295,9 @@ public class AttackSpecificationPackageImpl extends EPackageImpl implements Atta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getVulnerability_AttackVector() {
-		return (EAttribute) vulnerabilityEClass.getEStructuralFeatures().get(0);
+	public EAttribute getVulnerability_AttackVector()
+	{
+		return (EAttribute)vulnerabilityEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -307,8 +305,9 @@ public class AttackSpecificationPackageImpl extends EPackageImpl implements Atta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getVulnerability_Privileges() {
-		return (EAttribute) vulnerabilityEClass.getEStructuralFeatures().get(1);
+	public EAttribute getVulnerability_Privileges()
+	{
+		return (EAttribute)vulnerabilityEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -316,8 +315,9 @@ public class AttackSpecificationPackageImpl extends EPackageImpl implements Atta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getVulnerability_RequiredCredentials() {
-		return (EReference) vulnerabilityEClass.getEStructuralFeatures().get(2);
+	public EReference getVulnerability_RequiredCredentials()
+	{
+		return (EReference)vulnerabilityEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -325,8 +325,9 @@ public class AttackSpecificationPackageImpl extends EPackageImpl implements Atta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getVulnerability_ConfidentialityImpact() {
-		return (EAttribute) vulnerabilityEClass.getEStructuralFeatures().get(3);
+	public EAttribute getVulnerability_ConfidentialityImpact()
+	{
+		return (EAttribute)vulnerabilityEClass.getEStructuralFeatures().get(3);
 	}
 
 	/**
@@ -334,8 +335,9 @@ public class AttackSpecificationPackageImpl extends EPackageImpl implements Atta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getVulnerability_IntegrityImpact() {
-		return (EAttribute) vulnerabilityEClass.getEStructuralFeatures().get(4);
+	public EAttribute getVulnerability_IntegrityImpact()
+	{
+		return (EAttribute)vulnerabilityEClass.getEStructuralFeatures().get(4);
 	}
 
 	/**
@@ -343,8 +345,9 @@ public class AttackSpecificationPackageImpl extends EPackageImpl implements Atta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getVulnerability_AvailabilityImpact() {
-		return (EAttribute) vulnerabilityEClass.getEStructuralFeatures().get(5);
+	public EAttribute getVulnerability_AvailabilityImpact()
+	{
+		return (EAttribute)vulnerabilityEClass.getEStructuralFeatures().get(5);
 	}
 
 	/**
@@ -352,8 +355,9 @@ public class AttackSpecificationPackageImpl extends EPackageImpl implements Atta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getVulnerability_GainedAttributes() {
-		return (EReference) vulnerabilityEClass.getEStructuralFeatures().get(6);
+	public EReference getVulnerability_GainedAttributes()
+	{
+		return (EReference)vulnerabilityEClass.getEStructuralFeatures().get(6);
 	}
 
 	/**
@@ -361,8 +365,9 @@ public class AttackSpecificationPackageImpl extends EPackageImpl implements Atta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getVulnerability_TakeOver() {
-		return (EAttribute) vulnerabilityEClass.getEStructuralFeatures().get(7);
+	public EAttribute getVulnerability_TakeOver()
+	{
+		return (EAttribute)vulnerabilityEClass.getEStructuralFeatures().get(7);
 	}
 
 	/**
@@ -370,8 +375,9 @@ public class AttackSpecificationPackageImpl extends EPackageImpl implements Atta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getVulnerability_Role() {
-		return (EReference) vulnerabilityEClass.getEStructuralFeatures().get(8);
+	public EReference getVulnerability_Role()
+	{
+		return (EReference)vulnerabilityEClass.getEStructuralFeatures().get(8);
 	}
 
 	/**
@@ -379,7 +385,8 @@ public class AttackSpecificationPackageImpl extends EPackageImpl implements Atta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getCategoryAttack() {
+	public EClass getCategoryAttack()
+	{
 		return categoryAttackEClass;
 	}
 
@@ -388,8 +395,9 @@ public class AttackSpecificationPackageImpl extends EPackageImpl implements Atta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getCategoryAttack_Category() {
-		return (EReference) categoryAttackEClass.getEStructuralFeatures().get(0);
+	public EReference getCategoryAttack_Category()
+	{
+		return (EReference)categoryAttackEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -397,7 +405,8 @@ public class AttackSpecificationPackageImpl extends EPackageImpl implements Atta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getCVEVulnerability() {
+	public EClass getCVEVulnerability()
+	{
 		return cveVulnerabilityEClass;
 	}
 
@@ -406,8 +415,9 @@ public class AttackSpecificationPackageImpl extends EPackageImpl implements Atta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getCVEVulnerability_CveID() {
-		return (EReference) cveVulnerabilityEClass.getEStructuralFeatures().get(0);
+	public EReference getCVEVulnerability_CveID()
+	{
+		return (EReference)cveVulnerabilityEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -415,7 +425,8 @@ public class AttackSpecificationPackageImpl extends EPackageImpl implements Atta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getCWEID() {
+	public EClass getCWEID()
+	{
 		return cweidEClass;
 	}
 
@@ -424,8 +435,9 @@ public class AttackSpecificationPackageImpl extends EPackageImpl implements Atta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getCWEID_CweID() {
-		return (EAttribute) cweidEClass.getEStructuralFeatures().get(0);
+	public EAttribute getCWEID_CweID()
+	{
+		return (EAttribute)cweidEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -433,8 +445,9 @@ public class AttackSpecificationPackageImpl extends EPackageImpl implements Atta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getCWEID_Children() {
-		return (EReference) cweidEClass.getEStructuralFeatures().get(1);
+	public EReference getCWEID_Children()
+	{
+		return (EReference)cweidEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -442,8 +455,9 @@ public class AttackSpecificationPackageImpl extends EPackageImpl implements Atta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getCWEID_Parents() {
-		return (EReference) cweidEClass.getEStructuralFeatures().get(2);
+	public EReference getCWEID_Parents()
+	{
+		return (EReference)cweidEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -451,7 +465,8 @@ public class AttackSpecificationPackageImpl extends EPackageImpl implements Atta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getAttackCategory() {
+	public EClass getAttackCategory()
+	{
 		return attackCategoryEClass;
 	}
 
@@ -460,7 +475,8 @@ public class AttackSpecificationPackageImpl extends EPackageImpl implements Atta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getCWEAttack() {
+	public EClass getCWEAttack()
+	{
 		return cweAttackEClass;
 	}
 
@@ -469,7 +485,8 @@ public class AttackSpecificationPackageImpl extends EPackageImpl implements Atta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getCVEAttack() {
+	public EClass getCVEAttack()
+	{
 		return cveAttackEClass;
 	}
 
@@ -478,7 +495,8 @@ public class AttackSpecificationPackageImpl extends EPackageImpl implements Atta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getCVEID() {
+	public EClass getCVEID()
+	{
 		return cveidEClass;
 	}
 
@@ -487,8 +505,9 @@ public class AttackSpecificationPackageImpl extends EPackageImpl implements Atta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getCVEID_CveID() {
-		return (EAttribute) cveidEClass.getEStructuralFeatures().get(0);
+	public EAttribute getCVEID_CveID()
+	{
+		return (EAttribute)cveidEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -496,7 +515,8 @@ public class AttackSpecificationPackageImpl extends EPackageImpl implements Atta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getCWEVulnerability() {
+	public EClass getCWEVulnerability()
+	{
 		return cweVulnerabilityEClass;
 	}
 
@@ -505,7 +525,8 @@ public class AttackSpecificationPackageImpl extends EPackageImpl implements Atta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getCWEBasedVulnerability() {
+	public EClass getCWEBasedVulnerability()
+	{
 		return cweBasedVulnerabilityEClass;
 	}
 
@@ -514,8 +535,9 @@ public class AttackSpecificationPackageImpl extends EPackageImpl implements Atta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getCWEBasedVulnerability_CweID() {
-		return (EReference) cweBasedVulnerabilityEClass.getEStructuralFeatures().get(0);
+	public EReference getCWEBasedVulnerability_CweID()
+	{
+		return (EReference)cweBasedVulnerabilityEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -523,7 +545,8 @@ public class AttackSpecificationPackageImpl extends EPackageImpl implements Atta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getRole() {
+	public EClass getRole()
+	{
 		return roleEClass;
 	}
 
@@ -532,7 +555,8 @@ public class AttackSpecificationPackageImpl extends EPackageImpl implements Atta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EEnum getAttackVector() {
+	public EEnum getAttackVector()
+	{
 		return attackVectorEEnum;
 	}
 
@@ -541,7 +565,8 @@ public class AttackSpecificationPackageImpl extends EPackageImpl implements Atta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EEnum getPrivileges() {
+	public EEnum getPrivileges()
+	{
 		return privilegesEEnum;
 	}
 
@@ -550,7 +575,8 @@ public class AttackSpecificationPackageImpl extends EPackageImpl implements Atta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EEnum getConfidentialityImpact() {
+	public EEnum getConfidentialityImpact()
+	{
 		return confidentialityImpactEEnum;
 	}
 
@@ -559,7 +585,8 @@ public class AttackSpecificationPackageImpl extends EPackageImpl implements Atta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EEnum getIntegrityImpact() {
+	public EEnum getIntegrityImpact()
+	{
 		return integrityImpactEEnum;
 	}
 
@@ -568,7 +595,8 @@ public class AttackSpecificationPackageImpl extends EPackageImpl implements Atta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EEnum getAvailabilityImpact() {
+	public EEnum getAvailabilityImpact()
+	{
 		return availabilityImpactEEnum;
 	}
 
@@ -577,8 +605,9 @@ public class AttackSpecificationPackageImpl extends EPackageImpl implements Atta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AttackSpecificationFactory getAttackSpecificationFactory() {
-		return (AttackSpecificationFactory) getEFactoryInstance();
+	public AttackSpecificationFactory getAttackSpecificationFactory()
+	{
+		return (AttackSpecificationFactory)getEFactoryInstance();
 	}
 
 	/**
@@ -595,9 +624,9 @@ public class AttackSpecificationPackageImpl extends EPackageImpl implements Atta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void createPackageContents() {
-		if (isCreated)
-			return;
+	public void createPackageContents()
+	{
+		if (isCreated) return;
 		isCreated = true;
 
 		// Create classes and their features
@@ -663,9 +692,9 @@ public class AttackSpecificationPackageImpl extends EPackageImpl implements Atta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void initializePackageContents() {
-		if (isInitialized)
-			return;
+	public void initializePackageContents()
+	{
+		if (isInitialized) return;
 		isInitialized = true;
 
 		// Initialize package
@@ -674,12 +703,11 @@ public class AttackSpecificationPackageImpl extends EPackageImpl implements Atta
 		setNsURI(eNS_URI);
 
 		// Obtain other dependent packages
-		EntityPackage theEntityPackage = (EntityPackage) EPackage.Registry.INSTANCE.getEPackage(EntityPackage.eNS_URI);
-		XMLTypePackage theXMLTypePackage = (XMLTypePackage) EPackage.Registry.INSTANCE
-				.getEPackage(XMLTypePackage.eNS_URI);
-		PolicyPackage thePolicyPackage = (PolicyPackage) EPackage.Registry.INSTANCE.getEPackage(PolicyPackage.eNS_URI);
-		SystemPackage theSystemPackage = (SystemPackage) EPackage.Registry.INSTANCE.getEPackage(SystemPackage.eNS_URI);
-		EcorePackage theEcorePackage = (EcorePackage) EPackage.Registry.INSTANCE.getEPackage(EcorePackage.eNS_URI);
+		EntityPackage theEntityPackage = (EntityPackage)EPackage.Registry.INSTANCE.getEPackage(EntityPackage.eNS_URI);
+		XMLTypePackage theXMLTypePackage = (XMLTypePackage)EPackage.Registry.INSTANCE.getEPackage(XMLTypePackage.eNS_URI);
+		PolicyPackage thePolicyPackage = (PolicyPackage)EPackage.Registry.INSTANCE.getEPackage(PolicyPackage.eNS_URI);
+		SystemPackage theSystemPackage = (SystemPackage)EPackage.Registry.INSTANCE.getEPackage(SystemPackage.eNS_URI);
+		EcorePackage theEcorePackage = (EcorePackage)EPackage.Registry.INSTANCE.getEPackage(EcorePackage.eNS_URI);
 
 		// Create type parameters
 		ETypeParameter categoryAttackEClass_T = addETypeParameter(categoryAttackEClass, "T");
@@ -712,98 +740,50 @@ public class AttackSpecificationPackageImpl extends EPackageImpl implements Atta
 		// Initialize classes and features; add operations and parameters
 		initEClass(attackEClass, Attack.class, "Attack", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-		EOperation op = addEOperation(attackEClass, ecorePackage.getEBoolean(), "canExploit", 0, 1, IS_UNIQUE,
-				IS_ORDERED);
+		EOperation op = addEOperation(attackEClass, ecorePackage.getEBoolean(), "canExploit", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, this.getVulnerability(), "vulnerability", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, theXMLTypePackage.getBoolean(), "authentificated", 1, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, this.getAttackVector(), "attackVector", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		initEClass(vulnerabilityEClass, Vulnerability.class, "Vulnerability", IS_ABSTRACT, !IS_INTERFACE,
-				IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getVulnerability_AttackVector(), this.getAttackVector(), "attackVector", "", 1, 1,
-				Vulnerability.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
-				!IS_DERIVED, IS_ORDERED);
-		initEAttribute(getVulnerability_Privileges(), this.getPrivileges(), "privileges", "None", 1, 1,
-				Vulnerability.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
-				!IS_DERIVED, IS_ORDERED);
-		initEReference(getVulnerability_RequiredCredentials(), thePolicyPackage.getPolicy(), null,
-				"requiredCredentials", null, 0, 1, Vulnerability.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
-				!IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getVulnerability_ConfidentialityImpact(), this.getConfidentialityImpact(),
-				"confidentialityImpact", "None", 1, 1, Vulnerability.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
-				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getVulnerability_IntegrityImpact(), this.getIntegrityImpact(), "integrityImpact", "None", 1, 1,
-				Vulnerability.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
-				!IS_DERIVED, IS_ORDERED);
-		initEAttribute(getVulnerability_AvailabilityImpact(), this.getAvailabilityImpact(), "availabilityImpact",
-				"None", 1, 1, Vulnerability.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
-				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getVulnerability_GainedAttributes(), theSystemPackage.getUsageSpecification(), null,
-				"gainedAttributes", null, 0, -1, Vulnerability.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
-				!IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getVulnerability_TakeOver(), ecorePackage.getEBoolean(), "takeOver", null, 0, 1,
-				Vulnerability.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
-				!IS_DERIVED, IS_ORDERED);
-		initEReference(getVulnerability_Role(), this.getRole(), null, "role", null, 0, -1, Vulnerability.class,
-				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
-				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEClass(vulnerabilityEClass, Vulnerability.class, "Vulnerability", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getVulnerability_AttackVector(), this.getAttackVector(), "attackVector", "", 1, 1, Vulnerability.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getVulnerability_Privileges(), this.getPrivileges(), "privileges", "None", 1, 1, Vulnerability.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getVulnerability_RequiredCredentials(), thePolicyPackage.getPolicy(), null, "requiredCredentials", null, 0, 1, Vulnerability.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getVulnerability_ConfidentialityImpact(), this.getConfidentialityImpact(), "confidentialityImpact", "None", 1, 1, Vulnerability.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getVulnerability_IntegrityImpact(), this.getIntegrityImpact(), "integrityImpact", "None", 1, 1, Vulnerability.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getVulnerability_AvailabilityImpact(), this.getAvailabilityImpact(), "availabilityImpact", "None", 1, 1, Vulnerability.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getVulnerability_GainedAttributes(), theSystemPackage.getUsageSpecification(), null, "gainedAttributes", null, 0, -1, Vulnerability.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getVulnerability_TakeOver(), ecorePackage.getEBoolean(), "takeOver", null, 0, 1, Vulnerability.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getVulnerability_Role(), this.getRole(), null, "role", null, 0, -1, Vulnerability.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-		initEClass(categoryAttackEClass, CategoryAttack.class, "CategoryAttack", IS_ABSTRACT, !IS_INTERFACE,
-				IS_GENERATED_INSTANCE_CLASS);
+		initEClass(categoryAttackEClass, CategoryAttack.class, "CategoryAttack", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		g1 = createEGenericType(categoryAttackEClass_T);
-		initEReference(getCategoryAttack_Category(), g1, null, "category", null, 1, 1, CategoryAttack.class,
-				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
-				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getCategoryAttack_Category(), g1, null, "category", null, 1, 1, CategoryAttack.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-		initEClass(cveVulnerabilityEClass, CVEVulnerability.class, "CVEVulnerability", !IS_ABSTRACT, !IS_INTERFACE,
-				IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getCVEVulnerability_CveID(), this.getCVEID(), null, "cveID", null, 1, 1, CVEVulnerability.class,
-				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
-				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEClass(cveVulnerabilityEClass, CVEVulnerability.class, "CVEVulnerability", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getCVEVulnerability_CveID(), this.getCVEID(), null, "cveID", null, 1, 1, CVEVulnerability.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-		initEClass(cweidEClass,
-				org.palladiosimulator.pcm.confidentiality.attackerSpecification.attackSpecification.CWEID.class,
-				"CWEID", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getCWEID_CweID(), ecorePackage.getEInt(), "cweID", null, 0, 1,
-				org.palladiosimulator.pcm.confidentiality.attackerSpecification.attackSpecification.CWEID.class,
-				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getCWEID_Children(), this.getCWEID(), this.getCWEID_Parents(), "children", null, 0, -1,
-				org.palladiosimulator.pcm.confidentiality.attackerSpecification.attackSpecification.CWEID.class,
-				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
-				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getCWEID_Parents(), this.getCWEID(), this.getCWEID_Children(), "parents", null, 0, -1,
-				org.palladiosimulator.pcm.confidentiality.attackerSpecification.attackSpecification.CWEID.class,
-				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
-				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEClass(cweidEClass, org.palladiosimulator.pcm.confidentiality.attackerSpecification.attackSpecification.CWEID.class, "CWEID", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getCWEID_CweID(), ecorePackage.getEInt(), "cweID", null, 0, 1, org.palladiosimulator.pcm.confidentiality.attackerSpecification.attackSpecification.CWEID.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getCWEID_Children(), this.getCWEID(), this.getCWEID_Parents(), "children", null, 0, -1, org.palladiosimulator.pcm.confidentiality.attackerSpecification.attackSpecification.CWEID.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getCWEID_Parents(), this.getCWEID(), this.getCWEID_Children(), "parents", null, 0, -1, org.palladiosimulator.pcm.confidentiality.attackerSpecification.attackSpecification.CWEID.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-		initEClass(attackCategoryEClass, AttackCategory.class, "AttackCategory", IS_ABSTRACT, !IS_INTERFACE,
-				IS_GENERATED_INSTANCE_CLASS);
+		initEClass(attackCategoryEClass, AttackCategory.class, "AttackCategory", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-		op = addEOperation(attackCategoryEClass, theEcorePackage.getEBoolean(), "equalAttackType", 0, 1, IS_UNIQUE,
-				IS_ORDERED);
+		op = addEOperation(attackCategoryEClass, theEcorePackage.getEBoolean(), "equalAttackType", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, this.getAttackCategory(), "category", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		initEClass(cweAttackEClass, CWEAttack.class, "CWEAttack", !IS_ABSTRACT, !IS_INTERFACE,
-				IS_GENERATED_INSTANCE_CLASS);
+		initEClass(cweAttackEClass, CWEAttack.class, "CWEAttack", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-		initEClass(cveAttackEClass, CVEAttack.class, "CVEAttack", !IS_ABSTRACT, !IS_INTERFACE,
-				IS_GENERATED_INSTANCE_CLASS);
+		initEClass(cveAttackEClass, CVEAttack.class, "CVEAttack", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-		initEClass(cveidEClass,
-				org.palladiosimulator.pcm.confidentiality.attackerSpecification.attackSpecification.CVEID.class,
-				"CVEID", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getCVEID_CveID(), ecorePackage.getEString(), "cveID", null, 0, 1,
-				org.palladiosimulator.pcm.confidentiality.attackerSpecification.attackSpecification.CVEID.class,
-				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEClass(cveidEClass, org.palladiosimulator.pcm.confidentiality.attackerSpecification.attackSpecification.CVEID.class, "CVEID", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getCVEID_CveID(), ecorePackage.getEString(), "cveID", null, 0, 1, org.palladiosimulator.pcm.confidentiality.attackerSpecification.attackSpecification.CVEID.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-		initEClass(cweVulnerabilityEClass, CWEVulnerability.class, "CWEVulnerability", !IS_ABSTRACT, !IS_INTERFACE,
-				IS_GENERATED_INSTANCE_CLASS);
+		initEClass(cweVulnerabilityEClass, CWEVulnerability.class, "CWEVulnerability", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-		initEClass(cweBasedVulnerabilityEClass, CWEBasedVulnerability.class, "CWEBasedVulnerability", IS_ABSTRACT,
-				IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getCWEBasedVulnerability_CweID(), this.getCWEID(), null, "cweID", null, 1, -1,
-				CWEBasedVulnerability.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE,
-				IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEClass(cweBasedVulnerabilityEClass, CWEBasedVulnerability.class, "CWEBasedVulnerability", IS_ABSTRACT, IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getCWEBasedVulnerability_CweID(), this.getCWEID(), null, "cweID", null, 1, -1, CWEBasedVulnerability.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(roleEClass, Role.class, "Role", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 

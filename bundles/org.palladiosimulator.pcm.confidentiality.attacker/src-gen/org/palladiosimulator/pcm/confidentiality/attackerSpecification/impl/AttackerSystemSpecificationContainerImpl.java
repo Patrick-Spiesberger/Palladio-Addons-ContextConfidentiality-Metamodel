@@ -26,14 +26,15 @@ import org.palladiosimulator.pcm.confidentiality.attackerSpecification.pcmIntegr
  *
  * @generated
  */
-public class AttackerSystemSpecificationContainerImpl extends CDOObjectImpl
-		implements AttackerSystemSpecificationContainer {
+public class AttackerSystemSpecificationContainerImpl extends CDOObjectImpl implements AttackerSystemSpecificationContainer
+{
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected AttackerSystemSpecificationContainerImpl() {
+	protected AttackerSystemSpecificationContainerImpl()
+	{
 		super();
 	}
 
@@ -43,7 +44,8 @@ public class AttackerSystemSpecificationContainerImpl extends CDOObjectImpl
 	 * @generated
 	 */
 	@Override
-	protected EClass eStaticClass() {
+	protected EClass eStaticClass()
+	{
 		return AttackerPackage.Literals.ATTACKER_SYSTEM_SPECIFICATION_CONTAINER;
 	}
 
@@ -53,7 +55,8 @@ public class AttackerSystemSpecificationContainerImpl extends CDOObjectImpl
 	 * @generated
 	 */
 	@Override
-	protected int eStaticFeatureCount() {
+	protected int eStaticFeatureCount()
+	{
 		return 0;
 	}
 
@@ -63,9 +66,9 @@ public class AttackerSystemSpecificationContainerImpl extends CDOObjectImpl
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
-	public EList<SystemIntegration> getVulnerabilities() {
-		return (EList<SystemIntegration>) eGet(
-				AttackerPackage.Literals.ATTACKER_SYSTEM_SPECIFICATION_CONTAINER__VULNERABILITIES, true);
+	public EList<SystemIntegration> getVulnerabilities()
+	{
+		return (EList<SystemIntegration>)eGet(AttackerPackage.Literals.ATTACKER_SYSTEM_SPECIFICATION_CONTAINER__VULNERABILITIES, true);
 	}
 
 } //AttackerSystemSpecificationContainerImpl
